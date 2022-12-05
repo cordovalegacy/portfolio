@@ -1,20 +1,23 @@
 import './App.css';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import Home from './components/home';
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
         <nav>
-          <Link to="/portfolio/a">Technologies</Link>
-          <Link to="/portfolio/b">Experience</Link>
-          <Link to="/">Picture</Link>
-          <Link to="/portfolio/d">Personality</Link>
-          <Link to="/portfolio/e">Contact Me</Link>
+          <Link to="/portfolio/technologies">Technologies</Link>
+          <Link to="/portfolio/experience">Experience</Link>
+          <Link to="/">Brendan</Link>
+          <Link to="/portfolio/personality">Personality</Link>
+          <Link to="/portfolio/contact">Contact Me</Link>
         </nav>
-        <Routes>
-          <Route />
-        </Routes>
+        <div className='nav-content-spacer'>
+          <Routes>
+            <Route path='/' element={<Home />} />
+          </Routes>
+        </div>
       </div>
     </BrowserRouter>
   );
