@@ -5,11 +5,19 @@
         margin: 0;
         padding: 0;
     }
+
+    body{
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
     
     .App {
         display: flex;
+        align-items: center;
         background-image: linear-gradient(to right, rgba(255, 213, 0, 0.5), rgba(104, 11, 11, 0.25), rgba(99, 13, 13, 0.5), rgba(116, 22, 22, 0.75));
-        height: 40em;
+        height: 60em;
+        min-height: 100%;
     }
 
     a{
@@ -17,16 +25,12 @@
     }
 
     .left-nav {
-        position: fixed;
-        z-index: 1;
         width: 10%;
-        height: 100%;
-        top: 0;
+        height:100%;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         flex-direction: column;
-        margin: auto;
         overflow-x: hidden;
         background-image: linear-gradient(to bottom, rgba(0, 5, 96, 0.5), rgba(0, 2, 106, 0.5), rgba(0, 0, 0, 0.5));
     }
@@ -49,9 +53,8 @@
         width: 80%;
         justify-content: center;
         text-align: center;
-        margin-left: 15%;
-        margin-top: 8%;
-        height: 100%;
+        margin-left: 5%;
+        margin-top: 1%;
     }
 
     nav a {
@@ -96,7 +99,7 @@
     .home-container{
         display: flex;
         width: 100%;
-        align-items: flex-start;
+        align-items: center;
         height: 100%;
     }
 
@@ -164,7 +167,7 @@
 
     .home-default-content{
         display: flex;
-        width: 100%;
+        width: 99%;
         min-height: 25em;
         height: 100%;
         margin: 5px 5px 0px 2.5px;
@@ -172,7 +175,8 @@
         overflow: hidden;
         background-image: url(../public/white_bg.jpg);
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size:cover;
+        background-position: 50%;
         color: black;
         align-items: center;
     }
@@ -229,7 +233,7 @@
         border: none;
         font-family: 'Lucida Calligraphy', cursive;
         color: white;
-        font-size: 20px;
+        font-size: 18px;
         text-shadow: 0px 0px 8px black;
         cursor: pointer;
     }
@@ -242,6 +246,15 @@
         text-shadow: 0px 0px 5px white;
         transition: 300ms;
         text-emphasis: rgb(255, 0, 0);
+    }
+
+    #character{
+        position: absolute;
+        top: 500px;
+        left: 400px;
+        background-image: url('img/down1.png');
+        width: 60px;
+        height: 85px;
     }
 
     

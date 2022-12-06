@@ -1,5 +1,6 @@
 import React from "react";
 import Home_Photo from '../img/home_photo.jpg';
+import Ninja from '../img/down1.png';
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 
@@ -22,26 +23,29 @@ const Home = () => {
         setIsOpenTech(!isOpenTech);
     }
 
-    // var leftValue = 450, topValue = 100;
-    //         function update(){
-    //             document.getElementById("character").style.left = leftValue+"px";
-    //             document.getElementById("character").style.top = topValue+"px";
-    //         }
-    //         document.onkeydown = function(e) {
-    //             console.log('e: ', e); 
-    //             console.log('e.keyCode: ', e.keyCode);
-    //             if (e.keyCode == 37) { // LEFT
-    //                 leftValue = leftValue - 10;
-    //             }
-    //             else if (e.keyCode == 39) { // RIGHT
-    //                 leftValue = leftValue + 10;         
-    //             }
-    //             else if (e.keyCode == 40) { // DOWN
-    //                 topValue = topValue + 10;
-    //             }
-    //             // ...
+    var leftValue = 400, topValue = 500;
+    function update() {
+        document.getElementById("character").style.left = leftValue + "px";
+        document.getElementById("character").style.top = topValue + "px";
+    }
+    document.onkeydown = function (e) {
+        console.log('e: ', e);
+        console.log('e.key: ', e.key);
+        if (e.key == 65 && leftValue > 100) { // LEFT
+            leftValue = leftValue - 10;
+        }
+        else if (e.key == 68 && leftValue < 400) { // RIGHT
+            leftValue = leftValue + 10;
+        }
+        else if (e.key == 83 && topValue > 100) { // DOWN
+            topValue = topValue + 10;
+        }
+        else if (e.key == 87 && topValue < 500){ //UP
+            topValue = topValue - 10;
+        }
 
-    //             update();
+        update();
+    }
 
     return (
         <div className="home-container">
@@ -54,29 +58,28 @@ const Home = () => {
                 </div>
                 {!isOpenDev && !isOpenTech ? (
                     <div className="home-default-content">
-                        <div className="home-default-content">
-                            <div id="dev-ninja">
-                                <h3>Designing</h3>
-                                <h3>Debugging</h3>
-                                <h3>Teaching</h3>
-                                <h3>Testing</h3>
-                                <h3>Innovating</h3>
-                                <h3>Securing</h3>
-                                <h3>Solutions</h3>
-                                <h3>Communicating</h3>
-                                <h3>Creating</h3>
-                            </div>
-                            <div id="tech-ninja">
-                                <h3>Troubleshooting</h3>
-                                <h3>Technician</h3>
-                                <h3>Consulting</h3>
-                                <h3>Crafting</h3>
-                                <h3>Relations</h3>
-                                <h3>Sales</h3>
-                                <h3>Software</h3>
-                                <h3>Hardware</h3>
-                                <h3>Optimizing</h3>
-                            </div>
+                        <div id="dev-ninja">
+                            <h3>Designing</h3>
+                            <h3>Debugging</h3>
+                            <h3>Teaching</h3>
+                            <h3>Testing</h3>
+                            <h3>Innovating</h3>
+                            <h3>Security</h3>
+                            <h3>Solutions</h3>
+                            <h3>Communicating</h3>
+                            <h3>Creating</h3>
+                        </div>
+                        <div id="character"></div>
+                        <div id="tech-ninja">
+                            <h3>Troubleshooting</h3>
+                            <h3>Technician</h3>
+                            <h3>Consulting</h3>
+                            <h3>Crafting</h3>
+                            <h3>Relations</h3>
+                            <h3>Sales</h3>
+                            <h3>Software</h3>
+                            <h3>Hardware</h3>
+                            <h3>Optimization</h3>
                         </div>
                     </div>
                 ) : null}
@@ -97,7 +100,7 @@ const Home = () => {
             </div>
             <div className="home-content-parent">
                 <img id="home-photo" src={Home_Photo} alt="Home Page Photo" />
-                <button id="home-button" onClick={() => {navigate('/technologies')}}>Get to know me!</button>
+                <button id="home-button" onClick={() => { navigate('/technologies') }}>Get to know me!</button>
             </div>
         </div>
     )

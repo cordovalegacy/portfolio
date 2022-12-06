@@ -21,7 +21,7 @@ function App() {
         <nav className='top-nav'>
           <a href='https://github.com/cordovalegacy?tab=repositories'>Github</a>
           <a href='https://www.linkedin.com/in/brendan-cordova-2874011ba/'>LinkedIn</a>
-          <button id='download-button' value="download" onClick={getResume}>Resume</button>
+          <a href='resume.png' id='download-button' download>Resume</a>
           <a href='https://www.instagram.com/legacybuildspc/?next=%2F'>Instagram</a>
           <a href='http://35.164.101.114/'>Legacy Builds</a>
         </nav>
