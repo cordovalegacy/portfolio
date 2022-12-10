@@ -1,17 +1,17 @@
 @media screen and (min-width: 821px) {
 
     /* APP SECTION START */
-    *{
+    * {
         margin: 0;
         padding: 0;
     }
 
-    body{
+    body {
         display: flex;
         align-items: center;
         height: 100%;
     }
-    
+
     .App {
         display: flex;
         align-items: center;
@@ -20,13 +20,13 @@
         min-height: 100%;
     }
 
-    a{
+    a {
         color: inherit;
     }
 
     .left-nav {
         width: 10%;
-        height:100%;
+        height: 100%;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -84,10 +84,11 @@
         font-family: "Brush Script MT", cursive;
         font-size: 2em;
     }
+
     /* APP SECTION END */
     /* HOME SECTION START */
 
-    .home-content-parent{
+    .home-content-parent {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -96,21 +97,21 @@
         gap: 50px;
     }
 
-    .home-container{
+    .home-container {
         display: flex;
         width: 100%;
         align-items: center;
         height: 100%;
     }
 
-    #home-photo{
+    #home-photo {
         width: 80%;
         border: 2px double darkred;
         box-shadow: 0px 0px 5px 0px black;
         border-radius: 5px;
     }
 
-    #home-header{
+    #home-header {
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         font-weight: 100;
         font-size: 3em;
@@ -118,11 +119,11 @@
         border-bottom: 2px solid gray;
     }
 
-    #red-text{
+    #red-text {
         color: red;
     }
 
-    .home-header-wrapper{
+    .home-header-wrapper {
         width: 50%;
         height: fit-content;
         background-color: white;
@@ -131,28 +132,30 @@
         border-radius: 5px;
     }
 
-    .home-sub-header-wrapper{
+    .home-sub-header-wrapper {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        border-bottom:2px solid gray;
+        border-bottom: 2px solid gray;
     }
 
-    #software-header{
+    #software-header {
         font-size: 1.5em;
-        font-family:'Courier New', Courier, monospace;
+        font-family: 'Courier New', Courier, monospace;
         text-shadow: 0px 0px 10px skyblue;
         padding: 3px;
         text-decoration: none;
         font-weight: bolder;
     }
 
-    #software-header:hover{
+    #software-header:hover {
         text-shadow: 0px 0px 15px blue;
         cursor: pointer;
+        animation: shake 0.5s;
+        animation-iteration-count: infinite;
     }
 
-    #technician-header{
+    #technician-header {
         font-size: 1.5em;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         text-shadow: 0px 0px 10px darkgoldenrod;
@@ -160,12 +163,60 @@
         text-decoration: none;
     }
 
-    #technician-header:hover{
+    #technician-header:hover {
         text-shadow: 0px 0px 15px gold;
         cursor: pointer;
+        animation: shake 0.5s;
+        animation-iteration-count: infinite;
     }
 
-    .home-default-content{
+    @keyframes shake {
+        0% {
+            transform: translate(1px, 1px) rotate(0deg);
+        }
+
+        10% {
+            transform: translate(-1px, -2px) rotate(-1deg);
+        }
+
+        20% {
+            transform: translate(-3px, 0px) rotate(1deg);
+        }
+
+        30% {
+            transform: translate(3px, 2px) rotate(0deg);
+        }
+
+        40% {
+            transform: translate(1px, -1px) rotate(1deg);
+        }
+
+        50% {
+            transform: translate(-1px, 2px) rotate(-1deg);
+        }
+
+        60% {
+            transform: translate(-3px, 1px) rotate(0deg);
+        }
+
+        70% {
+            transform: translate(3px, 1px) rotate(-1deg);
+        }
+
+        80% {
+            transform: translate(-1px, -1px) rotate(1deg);
+        }
+
+        90% {
+            transform: translate(1px, 2px) rotate(0deg);
+        }
+
+        100% {
+            transform: translate(1px, -2px) rotate(-1deg);
+        }
+    }
+
+    .home-default-content {
         display: flex;
         width: 99%;
         min-height: 25em;
@@ -175,43 +226,43 @@
         overflow: hidden;
         background-image: url(../public/white_bg.jpg);
         background-repeat: no-repeat;
-        background-size:cover;
+        background-size: cover;
         background-position: 50%;
         color: black;
         align-items: center;
     }
 
-    #tech-ninja{
+    #tech-ninja {
         display: flex;
         flex-direction: column;
         gap: 0.7em;
         text-align: right;
     }
 
-    #dev-ninja{
+    #dev-ninja {
         display: flex;
         flex-direction: column;
         gap: 0.7em;
         text-align: left;
     }
 
-    #dev-ninja h3{
-        font-family:cursive;
+    #dev-ninja h3 {
+        font-family: cursive;
     }
 
-    #tech-ninja h3{
-        font-family:cursive;
+    #tech-ninja h3 {
+        font-family: cursive;
     }
 
-    #dev-ninja h3:hover{
+    #dev-ninja h3:hover {
         text-shadow: 0px 0px 10px darkblue;
     }
 
-    #tech-ninja h3:hover{
+    #tech-ninja h3:hover {
         text-shadow: 0px 0px 10px darkgoldenrod;
     }
 
-    #home-button{
+    #home-button {
         width: 80%;
         background-image: linear-gradient(to right, rgba(194, 3, 19, 0.614), rgba(0, 2, 106, 0.5), rgba(222, 0, 0, 0.5));
         height: 7.6em;
@@ -222,13 +273,13 @@
         box-shadow: 0px 0px 10px 0px black;
     }
 
-    #home-button:hover{
+    #home-button:hover {
         transition: 250ms;
         opacity: 0.7;
         background-image: linear-gradient(to right, rgba(15, 0, 4, 0.689), rgba(0, 2, 106, 0.5), rgba(40, 42, 86, 0.854));
     }
 
-    #download-button{
+    #download-button {
         background-color: inherit;
         border: none;
         font-family: 'Lucida Calligraphy', cursive;
@@ -238,7 +289,7 @@
         cursor: pointer;
     }
 
-    
+
     #download-button:hover {
         font-weight: 500;
         color: rgb(255, 0, 0);
@@ -248,7 +299,7 @@
         text-emphasis: rgb(255, 0, 0);
     }
 
-    #character{
+    #character {
         position: absolute;
         top: 500px;
         left: 400px;
@@ -257,7 +308,7 @@
         height: 85px;
     }
 
-    
+
     /* HOME SECTION END */
 
 
