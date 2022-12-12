@@ -1,8 +1,9 @@
 import './App.css';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import Home from './components/home';
 import emailjs from '@emailjs/browser';
 import { useState } from 'react';
+import Home from './components/home';
+import Technologies from './components/technologies';
 
 function App() {
 
@@ -104,6 +105,7 @@ function App() {
           <div className='nav-content-spacer'>
             <Routes>
               <Route path='/' element={<Home />} />
+              <Route path='/portfolio/technologies' element={<Technologies />} />
             </Routes>
           </div>
         </div>
