@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Routes, Route, Link, useNavigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Home from './components/home';
 import emailjs from '@emailjs/browser';
 import { useState } from 'react';
@@ -34,7 +34,7 @@ function App() {
   }
 
   const closeForm = (e) => {
-    document.getElementById("contact-me-alert-form").style.display = "none"
+    document.getElementById("resume-alert").style.display = "none"
   }
 
   const submitHandler = (e) => {
@@ -73,6 +73,8 @@ function App() {
             <a href='https://www.instagram.com/legacybuildspc/?next=%2F'>Instagram</a>
             <a href='http://35.164.101.114/'>Legacy Builds</a>
           </nav>
+          <div className='block block-1'><h2>TENACITY | COURAGE | PERSISTANCE | WILL-POWER | GROWTH | KINDNESS | LOYALTY | LEADERSHIP | PASSION | DEDICATION | MINDSET | ENCOURAGEMENT | MENTORSHIP | ENGAGEMENT | CONSIDERATE | REFLECTIVE | OBSESSED | VALUE | COLLABERATION | AWARENESS | FUN | ATTENTIVE | CONSTRUCTIVE | PATIENT | EAGER | ATTITUDE | COMMUNICATION | COOPERATION | PREPERATION | INCLUSIVE | PERSPECTIVE | RESPECTFUL </h2></div>
+          <div className='block block-2'><h2>RESPECTFUL | COURAGE | PERSISTANCE | INCLUSIVE | PERSPECTIVE | TENACITY | RELATABLE | TEAM-PLAYER | INTERESTED | IMPACT | LOGICAL | UNDERSTANDING | SMART | EXCELLENCE | HUMILITY | FAMILY | EFFORT | GRIT | EXPERIENCE | RESEARCH | FLEXIBLE | HARD-WORKING | RATIONAL | SEEKING | QUESTIONS | OBSERVANT | GRATEFUL | PLAYFUL | MATURE | EFFICIENT | REASONABLE | HONEST | CONFIDENT | FOCUS | TRAINING</h2></div>
           <div id='resume-alert'>
             <div id='resume-alert-top'>
               <h2>Thank you for viewing my resume!</h2>
