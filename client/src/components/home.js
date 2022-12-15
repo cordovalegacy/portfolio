@@ -23,56 +23,82 @@ const Home = () => {
     }
 
     return (
-            <div className="home-container">
-                <div className="home-header-wrapper">
-                    <h1 id="home-header">Brendan<span id="red-text"> Cordova</span></h1>
-                    <div className="home-sub-header-wrapper">
-                        <h2 onClick={handleOpenDev} id="software-header">Coding Dojo</h2>
-                        <h2>||</h2>
-                        <h2 onClick={handleOpenTech} id="technician-header">Legacy Builds, LLC</h2>
+        <div className="home-container">
+            <div className="home-header-wrapper">
+                <h1 id="home-header">Brendan<span id="red-text"> Cordova</span></h1>
+                <div className="home-sub-header-wrapper">
+                    <h2 onClick={handleOpenDev} id="software-header">Coding Dojo</h2>
+                    <h2>||</h2>
+                    <h2 onClick={handleOpenTech} id="technician-header">Legacy Builds, LLC</h2>
+                </div>
+                {!isOpenDev && !isOpenTech ? (
+                    <div className="home-default-content">
+                        <div id="dev-ninja">
+                            <h3>Designing</h3>
+                            <h3>Debugging</h3>
+                            <h3>Teaching</h3>
+                            <h3>Testing</h3>
+                            <h3>Innovating</h3>
+                            <h3>Security</h3>
+                            <h3>Solutions</h3>
+                            <h3>Communicating</h3>
+                            <h3>Creating</h3>
+                        </div>
+                        <div id="tech-ninja">
+                            <h3>Troubleshooting</h3>
+                            <h3>Technician</h3>
+                            <h3>Consulting</h3>
+                            <h3>Crafting</h3>
+                            <h3>Relations</h3>
+                            <h3>Sales</h3>
+                            <h3>Software</h3>
+                            <h3>Hardware</h3>
+                            <h3>Optimization</h3>
+                        </div>
                     </div>
-                    {!isOpenDev && !isOpenTech ? (
-                        <div className="home-default-content">
-                            <div id="dev-ninja">
-                                <h3>Designing</h3>
-                                <h3>Debugging</h3>
-                                <h3>Teaching</h3>
-                                <h3>Testing</h3>
-                                <h3>Innovating</h3>
-                                <h3>Security</h3>
-                                <h3>Solutions</h3>
-                                <h3>Communicating</h3>
-                                <h3>Creating</h3>
-                            </div>
-                            <div id="tech-ninja">
-                                <h3>Troubleshooting</h3>
-                                <h3>Technician</h3>
-                                <h3>Consulting</h3>
-                                <h3>Crafting</h3>
-                                <h3>Relations</h3>
-                                <h3>Sales</h3>
-                                <h3>Software</h3>
-                                <h3>Hardware</h3>
-                                <h3>Optimization</h3>
-                            </div>
-                        </div>
-                    ) : null}
-                    {isOpenDev ? (
-                        <div className="home-sub-header-wrapper">
+                ) : null}
+                {isOpenDev ? (
+                    <div className="home-sub-header-wrapper">
+                        <div>
                             <h2 id="dev-sub-header">Software Developer - Teacher's Assistant</h2>
+                            <ol>
+                                <li>Daily practice debugging code</li>
+                                <li>Teaching students programming fundamentals and concepts</li>
+                                <li>Learns from senior programmers</li>
+                                <li>Leads classes of up to 80 students at a time</li>
+                                <li>Learns new languages on the job during "upskilling hours"</li>
+                                <li>Handles administrative tasks to support instructors</li>
+                            </ol>
+                            <hr />
+                            <label>Video Goes Here</label>
+                            <video></video>
                         </div>
-                    ) : null}
-                    {isOpenTech ? (
-                        <div className="home-sub-header-wrapper">
+                    </div>
+                ) : null}
+                {isOpenTech ? (
+                    <div className="home-sub-header-wrapper">
+                        <div>
                             <h2 id="tech-sub-header">Computer Technician - Full Stack Developer</h2>
+                            <ol>
+                                <li>Designs, develops, and maintains company E-commcerce site</li>
+                                <li>Manages AWS EC2 Instance</li>
+                                <li>Constructs new custom computers</li>
+                                <li>Diagnosing computers with issues and reapiring them</li>
+                                <li>Works as a consultant to help customers identify PC needs</li>
+                                <li>Conistently learning new computer technology</li>
+                            </ol>
+                            <hr />
+                            <label>Video Goes Here</label>
+                            <video></video>
                         </div>
-                    ) : null}
-                </div>
-                <div className="home-content-parent">
-                    <img id="home-photo" src={Home_Photo} alt="Home Page Photo" />
-                    <button id="home-button" onClick={() => { navigate('/technologies') }}>Get to know me!</button>
-                </div>
+                    </div>
+                ) : null}
             </div>
+            <div className="home-content-parent">
+                <img id="home-photo" src={Home_Photo} alt="Home Page Photo" />
+                <button id="home-button" onClick={() => { navigate('/technologies') }}>Get to know me!</button>
+            </div>
+        </div>
     )
 }
 

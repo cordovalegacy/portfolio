@@ -1,11 +1,13 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import  Button, { NavItem } from "react-bootstrap";
+import Card from "react-bootstrap/Card";
 
 const Technologies = () => {
     return(
-        <div>
-            Hello World
+        <div className="technologies-container">
+            <Card>
+        Hello world
+            </Card>
         </div>
     )
 }

@@ -42,8 +42,13 @@
         align-items: center;
         flex-direction: column;
         overflow-x: hidden;
+        padding: 10px;
         box-shadow: 0px 0px 10px 0px white;
         background-image: linear-gradient(to bottom, rgba(0, 5, 96, 0.5), rgba(0, 2, 106, 0.5), rgba(0, 0, 0, 0.5));
+    }
+
+    .left-nav a{
+        margin-top: 10%;
     }
 
     .top-nav {
@@ -58,6 +63,10 @@
         margin: auto;
         box-shadow: 0px 0px 10px 0px white;
         background-image: linear-gradient(to right, rgba(116, 96, 0, 0.443), rgba(104, 11, 11, 0.25), rgba(99, 13, 13, 0.5), rgba(116, 22, 22, 0.75));
+    }
+
+    .top-nav a{
+        margin-left: 5%;
     }
 
     .nav-content-spacer {
@@ -98,7 +107,7 @@
     }
 
     footer{
-        width: 99%;
+        width: 100%;
         background-image: linear-gradient(to right, rgba(139, 0, 0, 0.468), whitesmoke, rgba(139, 0, 0, 0.468)); 
         border-top: 2px solid black;
         border-bottom: 2px solid black;
@@ -193,7 +202,10 @@
         display: flex;
         text-align: right;
         align-items: center;
+        padding: 5px;
         top: 10%;
+        overflow: hidden;
+        height: 10em;
     }
     
     .block-2{
@@ -201,7 +213,10 @@
         display: flex;
         align-items: center;
         top: 50%;
+        padding: 5px;
         text-align: right;
+        overflow: hidden;
+        height: 10em;
     }
 
     /* APP SECTION END */
@@ -341,9 +356,9 @@
 
     #dev-sub-header{
         color: blue;
-        -webkit-text-stroke: 1px black;
-        text-shadow: 0px 0px 10px gray;
-        border-bottom: 2px solid black;
+        -webkit-text-stroke: 1px white;
+        text-shadow: 0px 0px 5px black;
+        border-bottom: 2px solid gray;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 
@@ -387,10 +402,12 @@
 
     #dev-ninja h3 {
         font-family: cursive;
+        font-size: 1.5em;
     }
 
     #tech-ninja h3 {
         font-family: cursive;
+        font-size: 1.5em;
     }
 
     #dev-ninja h3:hover {
@@ -406,7 +423,7 @@
         background-image: linear-gradient(to right, rgba(194, 3, 19, 0.614), rgba(0, 2, 106, 0.5), rgba(222, 0, 0, 0.5));
         height: 7.6em;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        font-size: 20px;
+        font-size: 1.5em;
         border-radius: 5px;
         cursor: pointer;
         box-shadow: 0px 0px 10px 0px black;
@@ -438,9 +455,21 @@
         text-emphasis: rgb(255, 0, 0);
     }
 
+    li{
+        text-align: left;
+    }
+
 
     /* HOME SECTION END */
+    /* TECHNOLOGIES SECTION START */
 
+    .technologies-container{
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+
+    /* TECHNOLOGIES SECTION END */
 
 
 
