@@ -22,11 +22,26 @@ function App() {
   }
 
   const showSources = (e) => {
-    document.getElementById("footer-sources").style.display = "block"
+    document.getElementById("footer-sources").style.display = "flex"
+    document.getElementById("footer-sources").style.flexWrap = "wrap"
+    document.getElementById("footer-sources").style.gap = "1em"
+
+    document.querySelector('h5').style.display = "none"
+    document.getElementById('icons-credit').style.display = "block"
+
+    let links = document.querySelectorAll('.footer-links');
+    [].forEach.call(links, function(link) {
+      link.style.alignSelf = "center"
+      link.style.justifyContent = "space-between"
+      link.style.textShadow = "0px 0px 5px white"
+      link.style.textDecoration = "none"
+    });
   }
 
   const hideSources = (e) => {
     document.getElementById("footer-sources").style.display = "none"
+    document.getElementById('icons-credit').style.display = "none"
+    document.querySelector('h5').style.display = "block"
   }
 
   const openContactMeForm = (e) => {
@@ -110,11 +125,23 @@ function App() {
           </div>
         </div>
         <footer onMouseOver={showSources} onMouseOut={hideSources}>
-          Website by Brendan Cordova
+          <h5>Website by Brendan Cordova</h5>
+          <p id='icons-credit' className='footer-links'><a href='https://icons8.com/' style={{ color: "black", fontWeight: "bolder", textDecoration: "underline", padding: "15px", fontSize: "1em", textShadow: "0px 0px 5px gold" }}>All Icons by Icons8</a></p>
           <div id='footer-sources'>
-            <p>Source 1</p>
-            <p>Source 2</p>
-            <p>Source 3</p>
+            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/hGdCwhSHUe6L/python">| Python |</a><a target="_blank" href="https://icons8.com"></a></p>
+            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/Nlsua06Gvxel/react">| React |</a><a target="_blank" href="https://icons8.com"></a></p>
+            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/74402/mongodb">| MongoDB |</a><a target="_blank" href="https://icons8.com"></a></p>
+            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/Lk2Q5FRKDWGI/express">| Express |</a><a target="_blank" href="https://icons8.com"></a></p>
+            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/54087/nodejs">| Nodejs |</a><a target="_blank" href="https://icons8.com"></a></p>
+            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/AqYCfGyGXlO7/flask">| Flask |</a><a target="_blank" href="https://icons8.com"></a></p>
+            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/mRiGJYwO8l6B/bootstrap-logo">| Bootstrap |</a><a target="_blank" href="https://icons8.com"></a></p>
+            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/4PiNHtUJVbLs/tailwind-css">| Tailwind CSS |</a><a target="_blank" href="https://icons8.com"></a></p>
+            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/33039/amazon-web-services">| Amazon Web Services |</a><a target="_blank" href="https://icons8.com"></a></p>
+            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/rw7MSQeIdPoM/html-filetype">| HTML |</a><a target="_blank" href="https://icons8.com"></a></p>
+            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/10452/css-filetype">| CSS |</a><a target="_blank" href="https://icons8.com"></a></p>
+            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/42769/javascript-logo">| JavaScript |</a><a target="_blank" href="https://icons8.com"></a></p>
+            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/LoL4bFzqmAa0/github">| GitHub |</a><a target="_blank" href="https://icons8.com"></a></p>
+            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/20906/git">| Git |</a><a target="_blank" href="https://icons8.com"></a></p>
           </div>
         </footer>
       </div>

@@ -11,15 +11,21 @@
         align-items: center;
         height: 100%;
         background-color: black;
+        width: 100%;
     }
 
-    .App-container{
+    #root {
+        width: 100%;
+    }
+
+    .App-container {
         display: flex;
         flex-direction: column;
         align-items: center;
         min-height: 750px;
         max-height: 99vh;
         overflow: hidden;
+        width: 100%;
     }
 
     .App {
@@ -28,6 +34,7 @@
         background-image: linear-gradient(to right, rgba(48, 48, 253, 0.6), rgba(48, 14, 112, 0.25), rgba(99, 13, 13, 0.5), rgba(116, 22, 22, 0.75));
         height: 100em;
         min-height: 100%;
+        width: 100%;
     }
 
     a {
@@ -47,7 +54,7 @@
         background-image: linear-gradient(to bottom, rgba(0, 5, 96, 0.5), rgba(0, 2, 106, 0.5), rgba(0, 0, 0, 0.5));
     }
 
-    .left-nav a{
+    .left-nav a {
         margin-top: 10%;
     }
 
@@ -65,7 +72,7 @@
         background-image: linear-gradient(to right, rgba(116, 96, 0, 0.443), rgba(104, 11, 11, 0.25), rgba(99, 13, 13, 0.5), rgba(116, 22, 22, 0.75));
     }
 
-    .top-nav a{
+    .top-nav a {
         margin-left: 5%;
     }
 
@@ -106,24 +113,31 @@
         font-size: 2em;
     }
 
-    footer{
+    footer {
+        display: flex;
+        max-height: 100em;
         width: 100%;
-        background-image: linear-gradient(to right, rgba(139, 0, 0, 0.468), whitesmoke, rgba(139, 0, 0, 0.468)); 
+        background-image: linear-gradient(to right, rgba(139, 0, 0, 0.468), whitesmoke, rgba(139, 0, 0, 0.468));
         border-top: 2px solid black;
         border-bottom: 2px solid black;
         padding: 1%;
-        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        color: black;
     }
 
-    footer:hover{
+    footer:hover {
         border: 2px solid darksalmon;
     }
 
-    #footer-sources{
+    #footer-sources {
         display: none;
+        justify-content: center;
+        align-items: center;
     }
 
-    #resume-alert{
+    #resume-alert {
         width: fit-content;
         padding: 1%;
         z-index: 1;
@@ -137,7 +151,7 @@
         gap: 5px;
     }
 
-    #alert-button{
+    #alert-button {
         width: max-content;
         align-self: center;
         padding: 5px;
@@ -145,13 +159,13 @@
         margin: 10px 0px 5px 0px;
     }
 
-    #alert-button:hover{
+    #alert-button:hover {
         opacity: 0.9;
         background-color: black;
         color: white;
     }
 
-    #alert-button-row{
+    #alert-button-row {
         display: flex;
         width: 100%;
         justify-content: center;
@@ -159,36 +173,36 @@
         gap: 10px;
     }
 
-    #contact-me-alert-form{
+    #contact-me-alert-form {
         width: 20em;
         display: none;
         flex-direction: column;
         gap: 5px;
     }
 
-    .contact-form-top-row{
+    .contact-form-top-row {
         display: flex;
         justify-content: space-between;
     }
 
-    #close-form{
+    #close-form {
         height: fit-content;
         width: fit-content;
         border: none;
         align-self: center;
     }
 
-    #close-form:hover{
+    #close-form:hover {
         color: red;
     }
 
-    #contact-me-alert-form textarea{
+    #contact-me-alert-form textarea {
         max-width: 100%;
         height: 7em;
         max-height: 15em;
     }
 
-    .block{
+    .block {
         z-index: -1;
         position: absolute;
         width: 100%;
@@ -197,7 +211,7 @@
         transform: skew(0deg, 25deg);
     }
 
-    .block-1{
+    .block-1 {
         outline: 1px solid white;
         display: flex;
         text-align: right;
@@ -207,8 +221,8 @@
         overflow: hidden;
         height: 10em;
     }
-    
-    .block-2{
+
+    .block-2 {
         outline: 1px solid white;
         display: flex;
         align-items: center;
@@ -354,7 +368,7 @@
         }
     }
 
-    #dev-sub-header{
+    #dev-sub-header {
         color: blue;
         -webkit-text-stroke: 1px white;
         text-shadow: 0px 0px 5px black;
@@ -362,7 +376,7 @@
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 
-    #tech-sub-header{
+    #tech-sub-header {
         color: goldenrod;
         -webkit-text-stroke: 1px black;
         text-shadow: 0px 0px 10px gray;
@@ -455,7 +469,7 @@
         text-emphasis: rgb(255, 0, 0);
     }
 
-    li{
+    li {
         text-align: left;
     }
 
@@ -463,11 +477,34 @@
     /* HOME SECTION END */
     /* TECHNOLOGIES SECTION START */
 
-    .technologies-container{
+    .technologies-container {
         display: flex;
         width: 100%;
         align-items: center;
+        gap: 25px;
+        flex-direction: column;
     }
+
+    .bootstrap-card {
+        display: flex;
+        width: 60%;
+        justify-content: center;
+        padding: 1%;
+        box-shadow: 1px 1px 5px;
+        text-shadow: 0px 0px 1px darkred, 0px 0px 1px darkblue;
+        letter-spacing: 0.5px;
+    }
+
+    .bootstrap-card-body {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .bootstrap-card-body img {
+        width: 4em;
+    }
+
 
     /* TECHNOLOGIES SECTION END */
 
