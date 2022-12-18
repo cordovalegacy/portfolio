@@ -4,6 +4,7 @@ import emailjs from '@emailjs/browser';
 import { useState } from 'react';
 import Home from './components/home';
 import Technologies from './components/technologies';
+import ContactMe from './components/contact_me';
 
 function App() {
 
@@ -87,7 +88,7 @@ function App() {
             <a href='https://www.linkedin.com/in/brendan-cordova-2874011ba/'>LinkedIn</a>
             <a href='resume.png' id='download-button' onClick={getResume} download>Resume</a>
             <a href='https://www.instagram.com/legacybuildspc/?next=%2F'>Instagram</a>
-            <a href='http://35.164.101.114/'>Legacy Builds</a>
+            <a href='http://legacybuildspc.com'>Legacy Builds</a>
           </nav>
           <div className='block block-1'><h2>TENACITY | COURAGE | PERSISTANCE | WILL-POWER | GROWTH | KINDNESS | LOYALTY | LEADERSHIP | PASSION | DEDICATION | MINDSET | ENCOURAGEMENT | MENTORSHIP | ENGAGEMENT | CONSIDERATE | REFLECTIVE | OBSESSED | VALUE | COLLABERATION | AWARENESS | FUN | ATTENTIVE | CONSTRUCTIVE | PATIENT | EAGER | ATTITUDE | COMMUNICATION | COOPERATION | PREPERATION | INCLUSIVE | PERSPECTIVE | RESPECTFUL </h2></div>
           <div className='block block-2'><h2>RESPECTFUL | COURAGE | PERSISTANCE | INCLUSIVE | PERSPECTIVE | TENACITY | RELATABLE | TEAM-PLAYER | INTERESTED | IMPACT | LOGICAL | UNDERSTANDING | SMART | EXCELLENCE | HUMILITY | FAMILY | EFFORT | GRIT | EXPERIENCE | RESEARCH | FLEXIBLE | HARD-WORKING | RATIONAL | SEEKING | QUESTIONS | OBSERVANT | GRATEFUL | PLAYFUL | MATURE | EFFICIENT | REASONABLE | HONEST | CONFIDENT | FOCUS | TRAINING</h2></div>
@@ -121,6 +122,7 @@ function App() {
             <Routes>
               <Route path='/' element={<Home />} />
               <Route path='/portfolio/technologies' element={<Technologies />} />
+              <Route path='/portfolio/contact' element={<ContactMe />} />
             </Routes>
           </div>
         </div>

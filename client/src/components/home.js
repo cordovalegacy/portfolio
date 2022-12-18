@@ -1,6 +1,6 @@
 import React from "react";
 import Home_Photo from '../img/home_photo.jpg';
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 const Home = () => {
@@ -95,8 +95,8 @@ const Home = () => {
                 ) : null}
             </div>
             <div className="home-content-parent">
-                <img id="home-photo" src={Home_Photo} alt="Home Page Photo" />
-                <button id="home-button" onClick={() => { navigate('/technologies') }}>Get to know me!</button>
+                <img id="home-photo" src={Home_Photo} alt="Home Page" />
+                <button id="home-button" onClick={() => { navigate('/portfolio/technologies') }}>Get to know me!</button>
             </div>
         </div>
     )
