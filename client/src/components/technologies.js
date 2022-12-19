@@ -47,7 +47,7 @@ const Technologies = () => {
                 <Card className="bootstrap-card">
                     <Card.Title style={{justifyContent: "center"}}>Back End</Card.Title>
                     <Card.Body className="bootstrap-card-body">
-                        <img id="express" onMouseOver={(e) => { techDescriptions("EXPRESS", "gray") }} src={EXPRESS} alt="express" />
+                        <img id="express" onMouseOver={(e) => { techDescriptions("EXPRESS.JS", "gray") }} src={EXPRESS} alt="express" />
                         <img id="python" onMouseOver={(e) => { techDescriptions("PYTHON", "skyBlue") }} src={PYTHON} alt="python" />
                         <img id="nodejs" onMouseOver={(e) => { techDescriptions("NODE.JS", "green") }} src={NODEJS} alt="nodejs" />
                     </Card.Body>

@@ -31,13 +31,13 @@ const ContactMe = () => {
             emailAddress,
             message
         }
-        if(fullName && company && emailAddress && message){
-        emailjs.send('service_id', 'Portfolio', contactForm, 'LW4RMYIvhRvf0Fz9c')
-            .then((res) => {
-                console.log("Success!", res.data);
-            }, (err) => {
-                console.log("Email was not sent", err);
-            });
+        if (fullName && company && emailAddress && message) {
+            emailjs.send('service_id', 'Portfolio', contactForm, 'LW4RMYIvhRvf0Fz9c')
+                .then((res) => {
+                    console.log("Success!", res.data);
+                }, (err) => {
+                    console.log("Email was not sent", err);
+                });
             setFullName("")
             setCompany("")
             setEmailAddress("")
@@ -45,11 +45,12 @@ const ContactMe = () => {
             const success = document.getElementById('contact-greeting');
             success.innerText = "Thanks for reaching out!\nI will get right back to you.";
             success.style.color = "blue";
-    }else{
-        const warning = document.getElementById('contact-greeting');
-        warning.innerText = "Please complete the form to submit message";
-        warning.style.color = "red";
-    }}
+        } else {
+            const warning = document.getElementById('contact-greeting');
+            warning.innerText = "Please complete the form to submit message";
+            warning.style.color = "red";
+        }
+    }
 
     return (
         <Form id='contact-me-form' onSubmit={submitHandler}>
@@ -77,27 +78,27 @@ const ContactMe = () => {
                     type="text"
                     value={company}
                     onClick={(e) => {
-                        greetingHandler(`Hi ${fullName}! Where do you work?`, "red", "0px 0px 1px gray", "100%")
+                        greetingHandler(fullName && `Hi ${fullName}! Where do you work?`, "red", "0px 0px 1px gray", "100%")
                     }}
                     onChange={(e) => setCompany(e.target.value)}
                 />
                 <label>Email Address:</label>
-                <input 
-                type="text" 
-                value={emailAddress} 
-                onClick={(e) => {
-                    greetingHandler(`Wow you work at ${company}?! I am honored. Enter your work email address so we can chat!`, "darkblue", "0px 0px 1px blue", "100%")
-                }}
-                onChange={(e) => setEmailAddress(e.target.value)} 
+                <input
+                    type="text"
+                    value={emailAddress}
+                    onClick={(e) => {
+                        greetingHandler(company && `Wow you work at ${company}?! I am honored. Enter your work email address so we can chat!`, "darkblue", "0px 0px 1px blue", "100%")
+                    }}
+                    onChange={(e) => setEmailAddress(e.target.value)}
                 />
                 <label>Message:</label>
-                <textarea 
-                type="text" 
-                value={message} 
-                onClick={(e) => {
-                    greetingHandler(`${fullName}\n${company}\n${emailAddress}\n\nLooking forward to connecting with you!`, "goldenrod", "0px 0px 1px black", "100%")
-                }}
-                onChange={(e) => setMessage(e.target.value)}>
+                <textarea
+                    type="text"
+                    value={message}
+                    onClick={(e) => {
+                        greetingHandler(`${fullName}\n${company}\n${emailAddress}\n\n` + 'Looking forward to connecting with you!', "goldenrod", "0px 0px 1px black", "100%")
+                    }}
+                    onChange={(e) => setMessage(e.target.value)}>
                 </textarea>
                 <br />
                 <input type="submit" value="Submit" />
