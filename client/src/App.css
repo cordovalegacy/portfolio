@@ -240,7 +240,7 @@
         height: 10em;
     }
 
-    #icons-credit{
+    #icons-credit {
         display: none;
     }
 
@@ -450,12 +450,12 @@
         flex-direction: column;
     }
 
-    #description{
+    #description {
         justify-content: center;
         letter-spacing: 2.5px;
     }
 
-    .technologies-container div{
+    .technologies-container div {
         display: flex;
         width: 90%;
         gap: 3%;
@@ -504,15 +504,84 @@
     #flask:hover,
     #aws:hover,
     #git:hover,
-    #github:hover{
+    #github:hover {
         animation: shake 0.75s;
         transform: scale(1.5);
     }
 
     /* TECHNOLOGIES SECTION END */
+    /* PERSONALITY SECTION START */
+
+    .personality-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 50em;
+        min-height: 42em;
+        height: fit-content;
+        position: relative;
+        box-shadow: 0px 0px 10px 0px red;
+        overflow: hidden;
+    }
+
+    .personality-body {
+        z-index: 1;
+        background: linear-gradient(to right, silver, whitesmoke, white, whitesmoke, whitesmoke, white, whitesmoke, silver);
+        width: 90%;
+        border: 2px double black;
+        position: absolute;
+        height: fit-content;
+        min-height: 15em;
+        top: 25%;
+        border-radius: 5px;
+        box-shadow: 0px 0px 15px 0px black;
+    }
+
+    .personality-row{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .personality-row-headers{
+        display: flex;
+        width: 80%;
+        align-items: baseline;
+        cursor: pointer;
+        justify-content: space-evenly;
+    }
+
+    .personality-traits{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .personality-traits:hover{
+        color: red;
+        transition: 250ms;
+    }
+
+    #wedding-photo-personality{
+        width: 50%;
+        box-shadow: 0px 0px 10px 0px skyblue;
+    }
+
+    #gear-background-spin {
+        animation: rotation 20s infinite linear;
+        width: 10em;
+        z-index: 0;
+    }
+
+    #values-tab,
+    #interests-tab,
+    #dreams-tab,
+    #struggles-tab{
+        display: none;
+    }
+
+    /* PERSONALITY SECTION END */
     /* CONTACT ME SECTION START */
 
-    #contact-me-form{
+    #contact-me-form {
         display: flex;
         background-color: white;
         border-radius: 10px;
@@ -523,7 +592,7 @@
         box-shadow: 0px 0px 5px 0px black;
     }
 
-    #contact-me-form-group{
+    #contact-me-form-group {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -531,23 +600,24 @@
         padding: 2%;
     }
 
-    #contact-me-form-group h6{
+    #contact-me-form-group h6 {
         width: max-content;
         color: blue;
         padding: 1%;
     }
 
-    .contact-me-form-image{
+    .contact-me-form-image {
         width: 90%;
     }
-/* 
+
+    /* 
     .contact-me-card{
 
     } */
 
     /* CONTACT ME SECTION END */
 
-/* GLOBAL SECTION START */
+    /* GLOBAL SECTION START */
 
     @keyframes shake {
         0% {
@@ -594,7 +664,19 @@
             transform: translate(1px, -2px) rotate(-1deg);
         }
     }
-/* GLOBAL SECTION END */
+
+
+    @keyframes rotation {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    /* GLOBAL SECTION END */
 }
 
 @media screen and (max-width: 820px) {}

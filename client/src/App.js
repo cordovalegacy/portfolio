@@ -5,6 +5,9 @@ import { useState } from 'react';
 import Home from './components/home';
 import Technologies from './components/technologies';
 import ContactMe from './components/contact_me';
+import Experience from './components/experience';
+import Personality from './components/personality';
+import { warning } from '@remix-run/router';
 
 function App() {
 
@@ -31,7 +34,7 @@ function App() {
     document.getElementById('icons-credit').style.display = "block"
 
     let links = document.querySelectorAll('.footer-links');
-    [].forEach.call(links, function(link) {
+    [].forEach.call(links, function (link) {
       link.style.alignSelf = "center"
       link.style.justifyContent = "space-between"
       link.style.textShadow = "0px 0px 5px white"
@@ -63,13 +66,19 @@ function App() {
       emailAddress,
       message
     }
-    emailjs.send('service_id', 'Portfolio', contactForm, 'LW4RMYIvhRvf0Fz9c')
-      .then((res) => {
-        closeForm();
-        console.log("Success!", res.data);
-      }, (err) => {
-        console.log("Email was not sent", err);
-      });
+    if (fullName && company && emailAddress && message) {
+      emailjs.send('service_id', 'Portfolio', contactForm, 'LW4RMYIvhRvf0Fz9c')
+        .then((res) => {
+          closeForm();
+          console.log("Success!", res.data);
+        }, (err) => {
+          console.log("Email was not sent", err);
+        });
+    } else {
+      const warning = document.getElementById('resume-warning');
+      warning.innerText = "Please complete the form to submit message";
+      warning.style.color = "red";
+    }
   }
 
   return (
@@ -114,6 +123,7 @@ function App() {
               <input type="text" value={emailAddress} onChange={(e) => setEmailAddress(e.target.value)} />
               <label>Message:</label>
               <textarea type="text" value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
+              <p id='resume-warning'></p>
               <hr />
               <input type="submit" value="Submit" />
             </form>
@@ -122,6 +132,8 @@ function App() {
             <Routes>
               <Route path='/' element={<Home />} />
               <Route path='/portfolio/technologies' element={<Technologies />} />
+              <Route path='/portfolio/experience' element={<Experience />} />
+              <Route path='/portfolio/personality' element={<Personality />} />
               <Route path='/portfolio/contact' element={<ContactMe />} />
             </Routes>
           </div>
@@ -130,25 +142,28 @@ function App() {
           <h5>Website by Brendan Cordova</h5>
           <p id='icons-credit' className='footer-links'><a href='https://icons8.com/' style={{ color: "black", fontWeight: "bolder", textDecoration: "underline", padding: "15px", fontSize: "1em", textShadow: "0px 0px 5px gold" }}>All Icons by Icons8</a></p>
           <div id='footer-sources'>
-            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/hGdCwhSHUe6L/python">| Python |</a><a target="_blank" href="https://icons8.com"></a></p>
-            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/Nlsua06Gvxel/react">| React |</a><a target="_blank" href="https://icons8.com"></a></p>
-            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/74402/mongodb">| MongoDB |</a><a target="_blank" href="https://icons8.com"></a></p>
-            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/Lk2Q5FRKDWGI/express">| Express |</a><a target="_blank" href="https://icons8.com"></a></p>
-            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/54087/nodejs">| Nodejs |</a><a target="_blank" href="https://icons8.com"></a></p>
-            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/AqYCfGyGXlO7/flask">| Flask |</a><a target="_blank" href="https://icons8.com"></a></p>
-            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/mRiGJYwO8l6B/bootstrap-logo">| Bootstrap |</a><a target="_blank" href="https://icons8.com"></a></p>
-            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/4PiNHtUJVbLs/tailwind-css">| Tailwind CSS |</a><a target="_blank" href="https://icons8.com"></a></p>
-            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/33039/amazon-web-services">| Amazon Web Services |</a><a target="_blank" href="https://icons8.com"></a></p>
-            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/rw7MSQeIdPoM/html-filetype">| HTML |</a><a target="_blank" href="https://icons8.com"></a></p>
-            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/10452/css-filetype">| CSS |</a><a target="_blank" href="https://icons8.com"></a></p>
-            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/42769/javascript-logo">| JavaScript |</a><a target="_blank" href="https://icons8.com"></a></p>
-            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/LoL4bFzqmAa0/github">| GitHub |</a><a target="_blank" href="https://icons8.com"></a></p>
-            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/20906/git">| Git |</a><a target="_blank" href="https://icons8.com"></a></p>
+            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/hGdCwhSHUe6L/python">| Python |</a></p>
+            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/Nlsua06Gvxel/react">| React |</a></p>
+            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/74402/mongodb">| MongoDB |</a></p>
+            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/Lk2Q5FRKDWGI/express">| Express |</a></p>
+            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/54087/nodejs">| Nodejs |</a></p>
+            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/AqYCfGyGXlO7/flask">| Flask |</a></p>
+            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/mRiGJYwO8l6B/bootstrap-logo">| Bootstrap |</a></p>
+            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/4PiNHtUJVbLs/tailwind-css">| Tailwind CSS |</a></p>
+            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/33039/amazon-web-services">| Amazon Web Services |</a></p>
+            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/rw7MSQeIdPoM/html-filetype">| HTML |</a></p>
+            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/10452/css-filetype">| CSS |</a></p>
+            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/42769/javascript-logo">| JavaScript |</a></p>
+            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/LoL4bFzqmAa0/github">| GitHub |</a></p>
+            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/20906/git">| Git |</a></p>
+            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/43454/engineering">| Gear |</a></p>
+            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/64154/linkedin">LinkedIn</a></p>
+            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/hFoVFpm6gl9A/instagram">Instagram Clouds</a></p>
+            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/118557/github">Github Clouds</a></p>
           </div>
         </footer>
       </div>
     </BrowserRouter>
   );
 }
-
 export default App;
