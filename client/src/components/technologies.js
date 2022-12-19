@@ -18,7 +18,7 @@ import BOOTSTRAP from '../img/bootstrap.png';
 import CardHeader from "react-bootstrap/esm/CardHeader";
 
 const Technologies = () => {
-    const techDescriptions = (iconDescriptions, color, size) => {
+    const techDescriptions = (iconDescriptions, color) => {
         const header = document.getElementById('description');
         header.innerText = iconDescriptions;
         header.style.borderStyle = "ridge";
