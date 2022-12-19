@@ -439,7 +439,6 @@
         text-align: left;
     }
 
-
     /* HOME SECTION END */
     /* TECHNOLOGIES SECTION START */
 
@@ -449,7 +448,18 @@
         align-items: center;
         gap: 10px;
         flex-direction: column;
-        overflow-y: hidden;
+    }
+
+    #description{
+        justify-content: center;
+        letter-spacing: 2.5px;
+    }
+
+    .technologies-container div{
+        display: flex;
+        width: 90%;
+        gap: 3%;
+        align-items: center;
     }
 
     .bootstrap-card {
@@ -474,6 +484,7 @@
         justify-content: space-evenly;
         align-items: center;
         height: fit-content;
+        overflow: hidden;
     }
 
     .bootstrap-card-body img {
@@ -498,8 +509,43 @@
         transform: scale(1.5);
     }
 
-
     /* TECHNOLOGIES SECTION END */
+    /* CONTACT ME SECTION START */
+
+    #contact-me-form{
+        display: flex;
+        background-color: white;
+        border-radius: 10px;
+        width: 80%;
+        padding: 2%;
+        align-items: center;
+        border: 1px solid gray;
+        box-shadow: 0px 0px 5px 0px black;
+    }
+
+    #contact-me-form-group{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border-left: 3px solid gray;
+        padding: 2%;
+    }
+
+    #contact-me-form-group h6{
+        width: max-content;
+        color: blue;
+        padding: 1%;
+    }
+
+    .contact-me-form-image{
+        width: 90%;
+    }
+/* 
+    .contact-me-card{
+
+    } */
+
+    /* CONTACT ME SECTION END */
 
 /* GLOBAL SECTION START */
 
