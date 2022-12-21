@@ -13,13 +13,16 @@ import DREAMS from '../img/dreams.jpg';
 import STRUGGLES from '../img/struggles.jpg';
 
 const Personality = () => {
-    const traitList = document.getElementById('personality-tab');
-    const valueList = document.getElementById('values-tab');
-    const interestList = document.getElementById('interests-tab');
-    const dreamList = document.getElementById('dreams-tab');
-    const struggleList = document.getElementById('struggles-tab');
+
     const traitHandler = (id) => {
-        if(id === 1){
+        //
+        const traitList = document.getElementById('personality-tab');
+        const valueList = document.getElementById('values-tab');
+        const interestList = document.getElementById('interests-tab');
+        const dreamList = document.getElementById('dreams-tab');
+        const struggleList = document.getElementById('struggles-tab');
+        //
+        if (id === 1) {
             traitList.style.display = "none";
             interestList.style.display = "none";
             dreamList.style.display = "none";
@@ -29,7 +32,7 @@ const Personality = () => {
             valueList.style.flexDirection = "column";
             valueList.style.alignItems = "center";
         }
-        else if(id === 2){
+        else if (id === 2) {
             traitList.style.display = "none";
             valueList.style.display = "none";
             dreamList.style.display = "none";
@@ -39,7 +42,7 @@ const Personality = () => {
             interestList.style.flexDirection = "column";
             interestList.style.alignItems = "center";
         }
-        else if(id === 3){
+        else if (id === 3) {
             valueList.style.display = "none";
             dreamList.style.display = "none";
             struggleList.style.display = "none";
@@ -49,7 +52,7 @@ const Personality = () => {
             traitList.style.flexDirection = "column";
             traitList.style.alignItems = "center";
         }
-        else if(id === 4){
+        else if (id === 4) {
             traitList.style.display = "none";
             valueList.style.display = "none";
             struggleList.style.display = "none";
@@ -59,7 +62,7 @@ const Personality = () => {
             dreamList.style.flexDirection = "column";
             dreamList.style.alignItems = "center";
         }
-        else if(id === 5){
+        else if (id === 5) {
             traitList.style.display = "none";
             valueList.style.display = "none";
             dreamList.style.display = "none";
@@ -69,27 +72,27 @@ const Personality = () => {
             struggleList.style.flexDirection = "column";
             struggleList.style.alignItems = "center";
         }
-        else{
+        else {
             console.log('at home');
         }
-        
+
     }
 
     return (
         <Card className="personality-container">
             <br />
             <div className="personality-row-headers">
-                <Card.Text onClick={(e) => {traitHandler(1)}} className="personality-traits">Values</Card.Text>
-                <Card.Text onClick={(e) => {traitHandler(2)}} className="personality-traits">Interests</Card.Text>
-                <Card.Title onClick={(e) => {traitHandler(3)}} style={{ textShadow: "0px 0px 5px white", borderBottom: "1.5px solid black", fontSize: "1.75em" }}>Brendan <span style={{ color: "red" }}>Cordova</span></Card.Title>
-                <Card.Text onClick={(e) => {traitHandler(4)}} className="personality-traits">Dreams</Card.Text>
-                <Card.Text onClick={(e) => {traitHandler(5)}} className="personality-traits">Struggles</Card.Text>
+                <Card.Text onClick={(e) => { traitHandler(1) }} className="personality-traits" id="value">Values</Card.Text>
+                <Card.Text onClick={(e) => { traitHandler(2) }} className="personality-traits" id="interest">Interests</Card.Text>
+                <Card.Title onClick={(e) => { traitHandler(3) }} style={{ textShadow: "0px 0px 5px white", borderBottom: "1.5px solid black", fontSize: "1.75em" }}>Brendan <span style={{ color: "red" }}>Cordova</span></Card.Title>
+                <Card.Text onClick={(e) => { traitHandler(4) }} className="personality-traits" id="dream">Dreams</Card.Text>
+                <Card.Text onClick={(e) => { traitHandler(5) }} className="personality-traits" id="struggle">Struggles</Card.Text>
             </div>
             <Image id="gear-background-spin" src={GEAR} alt="gear"></Image>
             <Card.Body className="personality-body">
                 <div id="personality-tab">
                     <Image roundedCircle="true" id="wedding-photo-personality" src={WEDDING}></Image>
-                    <hr/>
+                    <hr />
                     <Card.Subtitle>Full Stack Developer | Entrepreneur | Computer Technician</Card.Subtitle>
                     <Card.Body className="personality-row">
                         <Card.Link href="https://github.com/cordovalegacy?tab=repositories">
@@ -105,76 +108,63 @@ const Personality = () => {
                 </div>
                 <div id="values-tab">
                     <Image roundedCircle="true" id="wedding-photo-personality" src={VALUES}></Image>
-                    <hr/>
+                    <hr />
                     <Card.Subtitle>Values</Card.Subtitle>
                     <Card.Text>God | Marriage | Family | Friends | Growth | Craft | Freedom | Experiences </Card.Text>
-                    <Card.Body className="personality-row">
-                        <Card.Link href="https://github.com/cordovalegacy?tab=repositories">
-                            <Image src={GITHUB}></Image>
-                        </Card.Link>
-                        <Card.Link href="https://www.instagram.com/legacybuildspc/?next=%2F">
-                            <Image src={INSTA}></Image>
-                        </Card.Link>
-                        <Card.Link href="https://www.linkedin.com/in/brendan-cordova-2874011ba/">
-                            <Image src={LINKEDIN}></Image>
-                        </Card.Link>
-                    </Card.Body>
+                    <Card.Text className="blue">
+                        My values are a cornerstone of who I am.
+                        They are the <span style={{ color: "red" }}>foundation</span> to how I treat people, what I prioritize, and how I make decisions.
+                        Although I feel strongly about my values,
+                        I will <span style={{ color: "red" }}>always </span>
+                        respect other people's values even if they do not align with my own</Card.Text>
                 </div>
                 <div id="interests-tab">
                     <Image roundedCircle="true" id="wedding-photo-personality" src={INTERESTS}></Image>
-                    <hr/>
+                    <hr />
                     <Card.Subtitle>Interests</Card.Subtitle>
                     <Card.Text>Front End Development | UX/UI | Computers | Crafting | Traveling | Food | Nature | People </Card.Text>
-                    <Card.Body className="personality-row">
-                        <Card.Link href="https://github.com/cordovalegacy?tab=repositories">
-                            <Image src={GITHUB}></Image>
-                        </Card.Link>
-                        <Card.Link href="https://www.instagram.com/legacybuildspc/?next=%2F">
-                            <Image src={INSTA}></Image>
-                        </Card.Link>
-                        <Card.Link href="https://www.linkedin.com/in/brendan-cordova-2874011ba/">
-                            <Image src={LINKEDIN}></Image>
-                        </Card.Link>
-                    </Card.Body>
+                    <Card.Text className="blue">My interests are what make me excited to get out of bed in the morning!
+                        They nourish my mind, body and soul.
+                        When I am doing what I <span style={{ color: "red" }}>love</span> I get immense joy and energy as a result.
+                        I have developed an obession with become a better developer,
+                        which is one reason why yuou should consider me at your company...
+                        I am <span style={{ color: "red" }}>vested.</span>
+                    </Card.Text>
                 </div>
                 <div id="dreams-tab">
                     <Image roundedCircle="true" id="wedding-photo-personality" src={DREAMS}></Image>
-                    <hr/>
+                    <hr />
                     <Card.Subtitle>Dreams</Card.Subtitle>
                     <Card.Text>Building Dream House | Travel the World | Live off the Land | Successful Start-Up</Card.Text>
-                    <Card.Body className="personality-row">
-                        <Card.Link href="https://github.com/cordovalegacy?tab=repositories">
-                            <Image src={GITHUB}></Image>
-                        </Card.Link>
-                        <Card.Link href="https://www.instagram.com/legacybuildspc/?next=%2F">
-                            <Image src={INSTA}></Image>
-                        </Card.Link>
-                        <Card.Link href="https://www.linkedin.com/in/brendan-cordova-2874011ba/">
-                            <Image src={LINKEDIN}></Image>
-                        </Card.Link>
-                    </Card.Body>
+                    <Card.Text className="blue">My dreams are what God put on my heart to set out and do in my life.
+                        I have an <span style={{ color: 'red' }}>endless</span> reservoir of things I want to achieve and accomplish.
+                        Which is why I am very <span style={{ color: "red" }}>intentional</span> about my thoughts, actions, habits, and actions.
+                    </Card.Text>
+                    <Card.Text className="quotes">
+                        “Don’t downgrade your dreams just to fit your reality.
+                        Upgrade your conviction to match your destiny.”
+                        —Stuart W. Scott
+                    </Card.Text>
                 </div>
                 <div id="struggles-tab">
                     <Image roundedCircle="true" id="wedding-photo-personality" src={STRUGGLES}></Image>
-                    <hr/>
+                    <hr />
                     <Card.Subtitle>Struggles</Card.Subtitle>
                     <Card.Text>
-                        I debated on whether I should throw this tab in here. 
-                        But every great person is molded through hardship. 
-                        I have suffered loss, illness, and heartbreak. 
-                        Three years ago I lost my best friend, my Brother. 
+                        I debated on whether I should throw this tab in here.
+                        But every great person is molded through hardship.
+                        I have suffered loss, illness, and heartbreak.
+                        Three years ago I lost my best friend, my Brother.
                         From that came a lot of suffering, but also breakthrough!
                         I found my love of technology when he passed.
                         I overcame life-threatening surgery.
-                        Lost more people, both friends and family.
+                        Lost friends and family..
                         All while the world was on lockdown.
-                        But the strongest rock in the world...
-                        Was formed under great pressure...
+                        But the strongest rock in the world
+                        is formed under great pressure...
                         And is now the most beautiful and valuable gem known to man.
                         The Diamond.
-                        Thank you for visiting my page and getting to know me, I hope I can get to know you as well!
-                        </Card.Text>
-                    
+                    </Card.Text>
                 </div>
             </Card.Body>
         </Card>
