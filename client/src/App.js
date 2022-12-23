@@ -161,6 +161,7 @@ function App() {
             <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/hFoVFpm6gl9A/instagram">| Instagram Clouds |</a></p>
             <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/118557/github">| Github Clouds |</a></p>
             <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/fYIVCtGl787B/ninja">| Ninja |</a></p>
+            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/XXGiIxpBslLo/hammer-and-pick">| Hammer and Pick |</a></p>
           </div>
         </footer>
       </div>
