@@ -1,4 +1,4 @@
-import React from "react";
+import {useState} from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from "react-bootstrap/Card";
 import Image from "react-bootstrap/Image";
@@ -7,6 +7,10 @@ import LOGO from '../img/logo.jpg';
 import TOOLS from '../img/tools.png';
 
 const Experience = () => {
+
+    const [trifoldOne, setTrifoldOne] = useState(false);
+    const [trifoldTwo, setTrifoldTwo] = useState(false);
+    const [trifoldThree, setTrifoldThree] = useState(false);
 
     return (
         <div className="container-experience">

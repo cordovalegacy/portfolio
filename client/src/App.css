@@ -662,13 +662,14 @@
 
     #trifold-1:hover,
     #trifold-2:hover,
-    #trifold-3:hover {
-        opacity: 1;
+    #trifold-3:hover, 
+    #trifold-text-1:hover,
+    #trifold-text-2:hover, 
+    #trifold-text-3:hover {
         z-index: 3;
         transform: scale(1.1);
         transition: 1s;
         border-radius: 10px;
-        border: 1px solid black;
     }
 
     #trifold-2 {
@@ -699,19 +700,16 @@
 
     #trifold-text-1:hover{
         text-decoration: 1px gray underline;
-        transform: scale(1.1);
         transition: 1s;
     }
 
     #trifold-text-2:hover{
         text-decoration: 1px gray underline;
-        transform: scale(1.1);
         transition: 1s;
     }
 
     #trifold-text-3:hover{
         text-decoration: 1px gray underline;
-        transform: scale(1.1);
         transition: 2s;
     }
 
