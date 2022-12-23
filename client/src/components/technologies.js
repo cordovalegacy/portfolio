@@ -13,7 +13,6 @@ import MONGODB from '../img/mongodb.png';
 import NODEJS from '../img/nodejs.png';
 import PYTHON from '../img/python.png';
 import REACT from '../img/react.png';
-import TAILWIND from '../img/tailwind.png';
 import BOOTSTRAP from '../img/bootstrap.png';
 import CardHeader from "react-bootstrap/esm/CardHeader";
 
@@ -40,7 +39,6 @@ const Technologies = () => {
                         <img id="css" onMouseOver={(e) => { techDescriptions("CSS", "deepSkyBlue") }} src={CSS} alt="css" />
                         <img id="js" onMouseOver={(e) => { techDescriptions("JAVASCRIPT", "yellow") }} src={JS} alt="js" />
                         <img id="bootstrap" onMouseOver={(e) => { techDescriptions("BOOTSTRAP", "purple") }} src={BOOTSTRAP} alt="bootstrap" />
-                        <img id="tailwind" onMouseOver={(e) => { techDescriptions("TAILWIND", "aqua") }} src={TAILWIND} alt="tailwind" />
                         <img id="html" onMouseOver={(e) => { techDescriptions("HTML", "orange") }} src={HTML} alt="html" />
                     </Card.Body>
                 </Card>

@@ -538,12 +538,12 @@
         box-shadow: 0px 0px 15px 0px black;
     }
 
-    .personality-row{
+    .personality-row {
         display: flex;
         justify-content: space-evenly;
     }
 
-    .personality-row-headers{
+    .personality-row-headers {
         display: flex;
         width: 80%;
         align-items: baseline;
@@ -551,16 +551,16 @@
         justify-content: space-evenly;
     }
 
-    .personality-traits{
+    .personality-traits {
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 
-    .personality-traits:hover{
+    .personality-traits:hover {
         color: red;
         transition: 250ms;
     }
 
-    #wedding-photo-personality{
+    #wedding-photo-personality {
         width: 50%;
         box-shadow: 0px 0px 10px 0px skyblue;
     }
@@ -574,15 +574,15 @@
     #values-tab,
     #interests-tab,
     #dreams-tab,
-    #struggles-tab{
+    #struggles-tab {
         display: none;
     }
 
-    .blue{
+    .blue {
         color: blue;
     }
 
-    .quotes{
+    .quotes {
         font-family: cursive;
         color: white;
         text-shadow: 0px 0px 15px black;
@@ -623,13 +623,123 @@
         width: 90%;
     }
 
-    /* 
-    .contact-me-card{
-
-    } */
-
     /* CONTACT ME SECTION END */
+    /* PERSONALITY SECTION START */
 
+    .experience-card {
+        display: flex;
+        position: relative;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        background-color: white;
+        max-height: 40em;
+        min-height: 20em;
+        height: fit-content;
+        border-radius: 10px;
+    }
+
+    .icon-buttons {
+        width: 8em;
+        margin: auto;
+    }
+
+    #trifold-1,
+    #trifold-2,
+    #trifold-3 {
+        position: absolute;
+        border-radius: 0px;
+        cursor: pointer;
+    }
+
+    #trifold-1 {
+        border-radius: 10px 0px 0px 10px;
+        height: 100%;
+        width: 33.33%;
+        left: 0%;
+        background-color: crimson;
+    }
+
+    #trifold-1:hover,
+    #trifold-2:hover,
+    #trifold-3:hover {
+        opacity: 1;
+        z-index: 3;
+        transform: scale(1.1);
+        transition: 1s;
+        border-radius: 10px;
+        border: 1px solid black;
+    }
+
+    #trifold-2 {
+        left: 32.8%;
+        width: 34%;
+        background-color: rgb(0, 0, 0);
+        height: 100%;
+    }
+
+    #trifold-3 {
+        border-radius: 0px 10px 10px 0px;
+        height: 100%;
+        left: 66.67%;
+        width: 33.33%;
+        background-color: deepskyblue;
+    }
+
+    .trifold-text {
+        display: flex;
+        width: 100%;
+        align-self: center;
+        text-shadow: 0px 0px 10px black;
+        font-size: 2.5em;
+        padding-top: 2%;
+        -webkit-text-stroke: 1.5px black;
+        cursor: pointer;
+    }
+
+    #trifold-text-1:hover{
+        text-decoration: 1px gray underline;
+        transform: scale(1.1);
+        transition: 1s;
+    }
+
+    #trifold-text-2:hover{
+        text-decoration: 1px gray underline;
+        transform: scale(1.1);
+        transition: 1s;
+    }
+
+    #trifold-text-3:hover{
+        text-decoration: 1px gray underline;
+        transform: scale(1.1);
+        transition: 2s;
+    }
+
+    #trifold-text-1 {
+        flex: 1;
+        color: red;
+    }
+
+    #trifold-text-2 {
+        color: darkgoldenrod;
+        -webkit-text-stroke: 0.75px white;
+        flex: 1;
+    }
+
+    #trifold-text-3 {
+        color: rgb(173, 216, 230);
+        -webkit-text-stroke: 0.5px black;
+        flex: 1;
+        text-shadow: 0px 0px 5px whitesmoke;
+    }
+
+    .container-experience {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* PERSONALITY SECTION END */
     /* GLOBAL SECTION START */
 
     @keyframes shake {
