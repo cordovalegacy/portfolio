@@ -12,6 +12,22 @@ const Experience = () => {
     const [trifoldTwo, setTrifoldTwo] = useState(false);
     const [trifoldThree, setTrifoldThree] = useState(false);
 
+    const openTriOne = (e) => {
+        setTrifoldOne(true)
+        setTrifoldTwo(false)
+        setTrifoldThree(false)
+    }
+    const openTriTwo = (e) => {
+        setTrifoldOne(false)
+        setTrifoldTwo(true)
+        setTrifoldThree(false)
+    }
+    const openTriThree = (e) => {
+        setTrifoldOne(false)
+        setTrifoldTwo(false)
+        setTrifoldThree(true)
+    }
+
     return (
         <div className="container-experience">
             <div className="experience-card">
