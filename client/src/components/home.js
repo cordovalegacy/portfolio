@@ -96,7 +96,7 @@ const Home = () => {
             </div>
             <div className="home-content-parent">
                 <img id="home-photo" src={Home_Photo} alt="Home Page" />
-                <button id="home-button" onClick={() => { navigate('/portfolio/technologies') }}>Get to know me!</button>
+                <button id="home-button" onClick={() => { navigate('/portfolio/personality') }}>Get to know me!</button>
             </div>
         </div>
     )
