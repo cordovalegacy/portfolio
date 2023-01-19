@@ -14,6 +14,7 @@ import NODEJS from '../img/nodejs.png';
 import PYTHON from '../img/python.png';
 import REACT from '../img/react.png';
 import BOOTSTRAP from '../img/bootstrap.png';
+import NATIVE from '../img/native.png';
 import CardHeader from "react-bootstrap/esm/CardHeader";
 
 const Technologies = () => {
@@ -35,6 +36,7 @@ const Technologies = () => {
                 <Card className="bootstrap-card">
                     <Card.Title style={{justifyContent: "center"}}>Front End</Card.Title>
                     <Card.Body className="bootstrap-card-body">
+                        <img id="react" onMouseOver={(e) => { techDescriptions("REACT NATIVE", 'blue') }} src={NATIVE} alt="react" />
                         <img id="react" onMouseOver={(e) => { techDescriptions("REACT.JS", 'dodgerBlue') }} src={REACT} alt="react" />
                         <img id="css" onMouseOver={(e) => { techDescriptions("CSS", "deepSkyBlue") }} src={CSS} alt="css" />
                         <img id="js" onMouseOver={(e) => { techDescriptions("JAVASCRIPT", "yellow") }} src={JS} alt="js" />
@@ -48,6 +50,7 @@ const Technologies = () => {
                         <img id="express" onMouseOver={(e) => { techDescriptions("EXPRESS.JS", "gray") }} src={EXPRESS} alt="express" />
                         <img id="python" onMouseOver={(e) => { techDescriptions("PYTHON", "skyBlue") }} src={PYTHON} alt="python" />
                         <img id="nodejs" onMouseOver={(e) => { techDescriptions("NODE.JS", "green") }} src={NODEJS} alt="nodejs" />
+                        <img id="flask" onMouseOver={(e) => { techDescriptions("FLASK", "darkGray") }} src={FLASK} alt="flask" />
                     </Card.Body>
                 </Card>
             </div>
@@ -56,14 +59,16 @@ const Technologies = () => {
                     <Card.Title style={{justifyContent: "center"}}>Database</Card.Title>
                     <Card.Body className="bootstrap-card-body">
                         <img id="mongodb" onMouseOver={(e) => { techDescriptions("MONGODB", "forestGreen") }} src={MONGODB} alt="mongodb" />
-                        <img id="flask" onMouseOver={(e) => { techDescriptions("FLASK", "darkGray") }} src={FLASK} alt="flask" />
+                        <img id="mongodb" onMouseOver={(e) => { techDescriptions("MONGODB", "forestGreen") }} src={MONGODB} alt="mongodb" />
                     </Card.Body>
                 </Card>
                 <Card className="bootstrap-card">
                     <Card.Title style={{justifyContent: "center"}}>Deployment</Card.Title>
                     <Card.Body className="bootstrap-card-body">
                         <img id="aws" onMouseOver={(e) => { techDescriptions("AWS", "goldenrod") }} src={AWS} alt="aws" />
+                        <img id="aws" onMouseOver={(e) => { techDescriptions("AWS", "goldenrod") }} src={AWS} alt="aws" />
                         <img id="git" onMouseOver={(e) => { techDescriptions("GIT", "orangeRed") }} src={GIT} alt="git" />
+                        <img id="github" onMouseOver={(e) => { techDescriptions("GITHUB", "black") }} src={GITHUB} alt="github" />
                         <img id="github" onMouseOver={(e) => { techDescriptions("GITHUB", "black") }} src={GITHUB} alt="github" />
                     </Card.Body>
                 </Card>

@@ -744,7 +744,17 @@
         border-radius: 5px;
         box-shadow: 0px 0px 5px gray;
         margin: auto;
-        padding: 25px;
+        padding: 15px;
+        font-family:'Times New Roman', Times, serif;
+    }
+
+    .experience-link{
+        color: darkred;
+    }
+
+    .experience-link-misc{
+        color: purple;
+        margin-left: -2.5em;
     }
 
     .experience-tab-header{
@@ -771,13 +781,96 @@
         padding: 10px;
     }
 
-    .profession-col{
+    .profession-col-dojo{
         max-width: 25%;
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    .profession-col-lb{
+        max-width: 25%;
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    .profession-col-misc{
+        max-width: 25%;
+        font-size: 15px;
+        padding: 5px;
     }
 
     .col-sub-head{
         color: purple;
         text-shadow: 0px 0px 5px darkgoldenrod;
+    }
+
+    .col-sub-head-misc{
+        color: purple;
+        text-shadow: 1px 1px 5px black;
+        font-weight: bolder;
+    }
+
+    .profession-col-dojo ul{
+        text-shadow: 0px 0px 2px gray;
+        padding: 20px 5px 20px 20px;
+        background-color: whitesmoke;
+        list-style:circle;
+        box-shadow: 0px 0px 5px darkred;
+    }
+
+    .profession-col-lb ul{
+        text-shadow: 0px 0px 2px gray;
+        padding: 20px 5px 20px 20px;
+        background-color: whitesmoke;
+        list-style:circle;
+        box-shadow: 0px 0px 5px darkgoldenrod;
+    }
+
+    .profession-col-misc ul{
+        color: rebeccapurple;
+        text-shadow: 0px 0px 2px gray;
+        padding: 20px 5px 20px 20px;
+        list-style:circle;
+    }
+
+    .col-experience-description-dojo{
+        text-shadow: 0px 0px 2px gray;
+        padding: 5px;
+        background-color: whitesmoke;
+        box-shadow: 0px 0px 5px darkred;
+    }
+
+    .col-experience-description-lb{
+        text-shadow: 0px 0px 2px gray;
+        padding: 5px;
+        background-color: whitesmoke;
+        box-shadow: 0px 0px 5px darkgoldenrod;
+    }
+
+    .col-experience-description-misc{
+        text-shadow: 0px 0px 2px gray;
+        padding: 5px;
+        background-color: whitesmoke;
+        box-shadow: 0px 0px 5px purple;
+    }
+
+    .experience-pic-layout{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .experience-pic-layout a img{
+        width: 5.5em;
+        max-width: 5.5em;
+        max-height: 100px;
+        min-height: 100px;
+        margin: 2px;
+    }
+
+    .experience-pic-layout a img:hover{
+        opacity: 0.8;
     }
 
     /* PERSONALITY SECTION END */
