@@ -18,7 +18,7 @@ function App() {
 
   const getResume = () => {
     console.log('Downloading Resume');
-    document.getElementById("resume-alert").style.display = "flex"
+    // document.getElementById("resume-alert").style.display = "flex"
   }
 
   const closeAlert = () => {
@@ -57,29 +57,29 @@ function App() {
     document.getElementById("resume-alert").style.display = "none"
   }
 
-  const submitHandler = (e) => {
-    e.preventDefault();
+  // const submitHandler = (e) => {
+  //   e.preventDefault();
 
-    const contactForm = {
-      fullName,
-      company,
-      emailAddress,
-      message
-    }
-    if (fullName && company && emailAddress && message) {
-      emailjs.send('service_id', 'Portfolio', contactForm, 'LW4RMYIvhRvf0Fz9c')
-        .then((res) => {
-          closeForm();
-          console.log("Success!", res.data);
-        }, (err) => {
-          console.log("Email was not sent", err);
-        });
-    } else {
-      const warning = document.getElementById('resume-warning');
-      warning.innerText = "Please complete the form to submit message";
-      warning.style.color = "red";
-    }
-  }
+  //   const contactForm = {
+  //     fullName,
+  //     company,
+  //     emailAddress,
+  //     message
+  //   }
+  //   if (fullName && company && emailAddress && message) {
+  //     emailjs.send('service_id', 'Portfolio', contactForm, 'LW4RMYIvhRvf0Fz9c')
+  //       .then((res) => {
+  //         closeForm();
+  //         console.log("Success!", res.data);
+  //       }, (err) => {
+  //         console.log("Email was not sent", err);
+  //       });
+  //   } else {
+  //     const warning = document.getElementById('resume-warning');
+  //     warning.innerText = "Please complete the form to submit message";
+  //     warning.style.color = "red";
+  //   }
+  // }
 
   return (
     <BrowserRouter>
@@ -100,8 +100,8 @@ function App() {
             <a href='http://legacybuildspc.com'>Legacy Builds</a>
           </nav>
           <div className='block block-1'><h2>TENACITY | COURAGE | PERSISTANCE | WILL-POWER | GROWTH | KINDNESS | LOYALTY | LEADERSHIP | PASSION | DEDICATION | MINDSET | ENCOURAGEMENT | MENTORSHIP | ENGAGEMENT | CONSIDERATE | REFLECTIVE | OBSESSED | VALUE | COLLABERATION | AWARENESS | FUN | ATTENTIVE | CONSTRUCTIVE | PATIENT | EAGER | ATTITUDE | COMMUNICATION | COOPERATION | PREPERATION | INCLUSIVE | PERSPECTIVE | RESPECTFUL </h2></div>
-          <div className='block block-2'><h2>RESPECTFUL | COURAGE | PERSISTANCE | INCLUSIVE | PERSPECTIVE | TENACITY | RELATABLE | TEAM-PLAYER | INTERESTED | IMPACT | LOGICAL | UNDERSTANDING | SMART | EXCELLENCE | HUMILITY | FAMILY | EFFORT | GRIT | EXPERIENCE | RESEARCH | FLEXIBLE | HARD-WORKING | RATIONAL | SEEKING | QUESTIONS | OBSERVANT | GRATEFUL | PLAYFUL | MATURE | EFFICIENT | REASONABLE | HONEST | CONFIDENT | FOCUS | TRAINING</h2></div>
-          <div id='resume-alert'>
+          {/* <div className='block block-2'><h2>RESPECTFUL | COURAGE | PERSISTANCE | INCLUSIVE | PERSPECTIVE | TENACITY | RELATABLE | TEAM-PLAYER | INTERESTED | IMPACT | LOGICAL | UNDERSTANDING | SMART | EXCELLENCE | HUMILITY | FAMILY | EFFORT | GRIT | EXPERIENCE | RESEARCH | FLEXIBLE | HARD-WORKING | RATIONAL | SEEKING | QUESTIONS | OBSERVANT | GRATEFUL | PLAYFUL | MATURE | EFFICIENT | REASONABLE | HONEST | CONFIDENT | FOCUS | TRAINING</h2></div> */}
+          {/* <div id='resume-alert'>
             <div id='resume-alert-top'>
               <h2>Thank you for viewing my resume!</h2>
               <h3>Please reach out to me if you have any questions.</h3>
@@ -127,7 +127,7 @@ function App() {
               <hr />
               <input type="submit" value="Submit" />
             </form>
-          </div>
+          </div> */}
           <div className='nav-content-spacer'>
             <Routes>
               <Route path='/' element={<Home />} />

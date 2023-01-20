@@ -11,6 +11,8 @@ import Punisher from '../img/enthusiast.JPG';
 import Thanos from '../img/thanos.jpg';
 import Crystal from '../img/crystal.png';
 import Batman from '../img/batman.png';
+import LB from '../img/lbproject.png';
+import Specialist from '../img/specialist.png';
 
 const Experience = () => {
 
@@ -67,9 +69,6 @@ const Experience = () => {
             {isOpenCodingDojo && !isOpenLB && !isOpenMiscProj ?
                 (
                     <div className="experience-open-tabs">
-                        <div>
-                            <h2 className="experience-tab-header" id="tab-header-one">Coding Dojo</h2>
-                            <hr />
                             <a href="/portfolio/experience" className="experience-link">Back To Experience</a>
                             <div className="profession-tab">
                                 <div className="profession-col-dojo">
@@ -119,16 +118,12 @@ const Experience = () => {
                                     </ul>
                                 </div>
                             </div>
-                        </div>
                     </div>
                 )
                 : null}
             {!isOpenCodingDojo && isOpenLB && !isOpenMiscProj ?
                 (
                     <div className="experience-open-tabs">
-                        <div>
-                            <h2 className="experience-tab-header" id="tab-header-two">Legacy Builds, LLC.</h2>
-                            <hr />
                             <a href="/portfolio/experience" className="experience-link">Back To Experience</a>
                             <div className="profession-tab">
                                 <div className="profession-col-lb">
@@ -178,58 +173,47 @@ const Experience = () => {
                                     </ul>
                                 </div>
                             </div>
-                        </div>
                     </div>
                 )
                 : null}
             {!isOpenCodingDojo && !isOpenLB && isOpenMiscProj ?
                 (
                     <div className="experience-open-tabs">
-                        <div>
-                            <h2 className="experience-tab-header" id="tab-header-three">Projects & Misc.</h2>
-                            <hr />
-                            <a href="/portfolio/experience" className="experience-link-misc">Back To Experience</a>
                             <div className="profession-tab">
                                 <div className="profession-col-misc">
-                                    <h4>Projects</h4>
-                                    <hr />
                                     <h6 className="col-sub-head-misc">Favorite Projects:</h6>
-                                    <hr/>
-                                    <ul>
-                                        <li><a>1000+ hours of development</a></li>
-                                        <li><a>1000+ hours of development</a></li>
-                                        <li><a>1000+ hours of development</a></li>
-                                        <li><a>1000+ hours of development</a></li>
-                                    </ul>
-                                </div>
-                                <div className="profession-col-misc">
-                                    <h4>Computers</h4>
                                     <hr />
-                                    <h6 className="col-sub-head-misc">Favorite Computers:</h6>
-                                    <hr/>
-                                    <div className="experience-pic-layout">
-                                        <a href="https://www.instagram.com/legacybuildspc/?next=%2F"><img src={Godzilla} alt="PC"/></a>
-                                        <a href='https://www.instagram.com/legacybuildspc/?next=%2F'><img src={Naruto} alt="PC"/></a>
-                                        <a href='https://www.instagram.com/legacybuildspc/?next=%2F'><img src={Thanos} alt="PC"/></a>
-                                        <a href='https://www.instagram.com/legacybuildspc/?next=%2F'><img src={Punisher} alt="PC"/></a>
-                                        <a href='https://www.instagram.com/legacybuildspc/?next=%2F'><img src={Crystal} alt="PC"/></a>
-                                        <a href='https://www.instagram.com/legacybuildspc/?next=%2F'><img src={Batman} alt="PC"/></a>
+                                    <div className="experience-project-layout">
+                                        <a href="#"><img className="proj-pic" src={LB} alt="legacy builds" /></a>
+                                        <a href='#'><img className="proj-pic" src={Specialist} alt="specialist" /></a>
                                     </div>
                                 </div>
                                 <div className="profession-col-misc">
-                                    <h4>Misc </h4>
+                                    <h6 className="col-sub-head-misc">Favorite Computers:</h6>
                                     <hr />
+                                    <div className="experience-pic-layout">
+                                        <a href="https://www.instagram.com/legacybuildspc/?next=%2F"><img src={Godzilla} alt="PC" /></a>
+                                        <a href='https://www.instagram.com/legacybuildspc/?next=%2F'><img src={Naruto} alt="PC" /></a>
+                                        <a href='https://www.instagram.com/legacybuildspc/?next=%2F'><img src={Thanos} alt="PC" /></a>
+                                        <a href='https://www.instagram.com/legacybuildspc/?next=%2F'><img src={Punisher} alt="PC" /></a>
+                                        <a href='https://www.instagram.com/legacybuildspc/?next=%2F'><img src={Crystal} alt="PC" /></a>
+                                        <a href='https://www.instagram.com/legacybuildspc/?next=%2F'><img src={Batman} alt="PC" /></a>
+                                    </div>
+                                </div>
+                                <div className="profession-col-misc">
                                     <h6 className="col-sub-head-misc">Life Stats:</h6>
-                                    <hr/>
-                                    <ul>
-                                        <li>Top of class with perfect score during time and Coding Dojo Bootcamp</li>
-                                        <li>10+ Senior Software Engineers I am mentored by</li>
-                                        <li>800+ hours of instructional/classroom environments</li>
-                                        <li>Udemy certificates in progress</li>
-                                    </ul>
+                                    <hr />
+                                    <div className="experience-pic-layout">
+                                        <a href="https://www.instagram.com/legacybuildspc/?next=%2F"><img src={Godzilla} alt="PC" /></a>
+                                        <a href='https://www.instagram.com/legacybuildspc/?next=%2F'><img src={Naruto} alt="PC" /></a>
+                                        <a href='https://www.instagram.com/legacybuildspc/?next=%2F'><img src={Thanos} alt="PC" /></a>
+                                        <a href='https://www.instagram.com/legacybuildspc/?next=%2F'><img src={Punisher} alt="PC" /></a>
+                                        <a href='https://www.instagram.com/legacybuildspc/?next=%2F'><img src={Crystal} alt="PC" /></a>
+                                        <a href='https://www.instagram.com/legacybuildspc/?next=%2F'><img src={Batman} alt="PC" /></a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                            <a href="/portfolio/experience" className="experience-link-misc">Back To Experience</a>
                     </div>
                 )
                 : null}

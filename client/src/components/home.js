@@ -33,28 +33,8 @@ const Home = () => {
                 </div>
                 {!isOpenDev && !isOpenTech ? (
                     <div className="home-default-content">
-                        <div id="dev-ninja">
-                            <h3>Designing</h3>
-                            <h3>Debugging</h3>
-                            <h3>Teaching</h3>
-                            <h3>Testing</h3>
-                            <h3>Innovating</h3>
-                            <h3>Security</h3>
-                            <h3>Solutions</h3>
-                            <h3>Communicating</h3>
-                            <h3>Creating</h3>
-                        </div>
-                        <div id="tech-ninja">
-                            <h3>Troubleshooting</h3>
-                            <h3>Technician</h3>
-                            <h3>Consulting</h3>
-                            <h3>Crafting</h3>
-                            <h3>Relations</h3>
-                            <h3>Sales</h3>
-                            <h3>Software</h3>
-                            <h3>Hardware</h3>
-                            <h3>Optimization</h3>
-                        </div>
+                        <div>VIDEO GOES HERE</div>
+                        {/* <video>VIDEO WILL GO HERE</video> */}
                     </div>
                 ) : null}
                 {isOpenDev ? (
@@ -69,9 +49,6 @@ const Home = () => {
                                 <li>Learns new languages on the job during "upskilling hours"</li>
                                 <li>Handles administrative tasks to support instructors</li>
                             </ol>
-                            <hr />
-                            <label>Video Goes Here</label>
-                            <video></video>
                         </div>
                     </div>
                 ) : null}
@@ -87,9 +64,6 @@ const Home = () => {
                                 <li>Works as a consultant to help customers identify PC needs</li>
                                 <li>Conistently learning new computer technology</li>
                             </ol>
-                            <hr />
-                            <label>Video Goes Here</label>
-                            <video></video>
                         </div>
                     </div>
                 ) : null}
