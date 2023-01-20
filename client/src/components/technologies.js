@@ -15,6 +15,9 @@ import PYTHON from '../img/python.png';
 import REACT from '../img/react.png';
 import BOOTSTRAP from '../img/bootstrap.png';
 import NATIVE from '../img/native.png';
+import GITLAB from '../img/gitlab.png';
+import HEROKU from '../img/heroku.png';
+import MYSQL from '../img/mysql.png';
 import CardHeader from "react-bootstrap/esm/CardHeader";
 
 const Technologies = () => {
@@ -59,16 +62,16 @@ const Technologies = () => {
                     <Card.Title style={{justifyContent: "center"}}>Database</Card.Title>
                     <Card.Body className="bootstrap-card-body">
                         <img id="mongodb" onMouseOver={(e) => { techDescriptions("MONGODB", "forestGreen") }} src={MONGODB} alt="mongodb" />
-                        <img id="mongodb" onMouseOver={(e) => { techDescriptions("MONGODB", "forestGreen") }} src={MONGODB} alt="mongodb" />
+                        <img id="mongodb" onMouseOver={(e) => { techDescriptions("MYSQL", "orange") }} src={MYSQL} alt="my sql" />
                     </Card.Body>
                 </Card>
                 <Card className="bootstrap-card">
                     <Card.Title style={{justifyContent: "center"}}>Deployment</Card.Title>
                     <Card.Body className="bootstrap-card-body">
                         <img id="aws" onMouseOver={(e) => { techDescriptions("AWS", "goldenrod") }} src={AWS} alt="aws" />
-                        <img id="aws" onMouseOver={(e) => { techDescriptions("AWS", "goldenrod") }} src={AWS} alt="aws" />
+                        <img id="aws" onMouseOver={(e) => { techDescriptions("HEROKU", "rebeccapurple") }} src={HEROKU} alt="heroku" />
                         <img id="git" onMouseOver={(e) => { techDescriptions("GIT", "orangeRed") }} src={GIT} alt="git" />
-                        <img id="github" onMouseOver={(e) => { techDescriptions("GITHUB", "black") }} src={GITHUB} alt="github" />
+                        <img id="github" onMouseOver={(e) => { techDescriptions("GITLAB", "yellow") }} src={GITLAB} alt="gitlab" />
                         <img id="github" onMouseOver={(e) => { techDescriptions("GITHUB", "black") }} src={GITHUB} alt="github" />
                     </Card.Body>
                 </Card>

@@ -5,10 +5,12 @@ import Image from "react-bootstrap/Image";
 import NINJA from '../img/ninja.png';
 import LOGO from '../img/logo.jpg';
 import TOOLS from '../img/tools.png';
-import Godzilla from '../img/supertier.JPG'
-import Naruto from '../img/highend.JPG'
-import Punisher from '../img/enthusiast.JPG'
-import Thanos from '../img/thanos.jpg'
+import Godzilla from '../img/supertier.JPG';
+import Naruto from '../img/highend.JPG';
+import Punisher from '../img/enthusiast.JPG';
+import Thanos from '../img/thanos.jpg';
+import Crystal from '../img/crystal.png';
+import Batman from '../img/batman.png';
 
 const Experience = () => {
 
@@ -206,10 +208,12 @@ const Experience = () => {
                                     <h6 className="col-sub-head-misc">Favorite Computers:</h6>
                                     <hr/>
                                     <div className="experience-pic-layout">
-                                        <a href="#"><img src={Godzilla} alt="PC"/></a>
-                                        <a href="#"><img src={Naruto} alt="PC"/></a>
-                                        <a href="#"><img src={Thanos} alt="PC"/></a>
-                                        <a href="#"><img src={Punisher} alt="PC"/></a>
+                                        <a href="https://www.instagram.com/legacybuildspc/?next=%2F"><img src={Godzilla} alt="PC"/></a>
+                                        <a href='https://www.instagram.com/legacybuildspc/?next=%2F'><img src={Naruto} alt="PC"/></a>
+                                        <a href='https://www.instagram.com/legacybuildspc/?next=%2F'><img src={Thanos} alt="PC"/></a>
+                                        <a href='https://www.instagram.com/legacybuildspc/?next=%2F'><img src={Punisher} alt="PC"/></a>
+                                        <a href='https://www.instagram.com/legacybuildspc/?next=%2F'><img src={Crystal} alt="PC"/></a>
+                                        <a href='https://www.instagram.com/legacybuildspc/?next=%2F'><img src={Batman} alt="PC"/></a>
                                     </div>
                                 </div>
                                 <div className="profession-col-misc">

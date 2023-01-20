@@ -162,6 +162,9 @@ function App() {
             <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/118557/github">| Github Clouds |</a></p>
             <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/fYIVCtGl787B/ninja">| Ninja |</a></p>
             <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/XXGiIxpBslLo/hammer-and-pick">| Hammer and Pick |</a></p>
+            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/UFXRpPFebwa2/mysql-logo">| MySQL Logo |</a></p>
+            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/qZYHC6vOz8sc/gitlab"></a>| Gitlab |</p>
+            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/69454/heroku"></a>| Heroku |</p>
           </div>
         </footer>
       </div>
