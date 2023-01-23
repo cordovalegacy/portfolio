@@ -7,23 +7,9 @@ import Technologies from './components/technologies';
 import ContactMe from './components/contact_me';
 import Experience from './components/experience';
 import Personality from './components/personality';
-import { warning } from '@remix-run/router';
+import Resume from './components/resume';
 
 function App() {
-
-  const [fullName, setFullName] = useState("");
-  const [company, setCompany] = useState("");
-  const [emailAddress, setEmailAddress] = useState("");
-  const [message, setMessage] = useState("");
-
-  const getResume = () => {
-    console.log('Downloading Resume');
-    // document.getElementById("resume-alert").style.display = "flex"
-  }
-
-  const closeAlert = () => {
-    document.getElementById("resume-alert").style.display = "none"
-  }
 
   const showSources = (e) => {
     document.getElementById("footer-sources").style.display = "flex"
@@ -48,39 +34,6 @@ function App() {
     document.querySelector('h5').style.display = "block"
   }
 
-  const openContactMeForm = (e) => {
-    document.getElementById("contact-me-alert-form").style.display = "flex"
-    document.getElementById("resume-alert-top").style.display = "none"
-  }
-
-  const closeForm = (e) => {
-    document.getElementById("resume-alert").style.display = "none"
-  }
-
-  // const submitHandler = (e) => {
-  //   e.preventDefault();
-
-  //   const contactForm = {
-  //     fullName,
-  //     company,
-  //     emailAddress,
-  //     message
-  //   }
-  //   if (fullName && company && emailAddress && message) {
-  //     emailjs.send('service_id', 'Portfolio', contactForm, 'LW4RMYIvhRvf0Fz9c')
-  //       .then((res) => {
-  //         closeForm();
-  //         console.log("Success!", res.data);
-  //       }, (err) => {
-  //         console.log("Email was not sent", err);
-  //       });
-  //   } else {
-  //     const warning = document.getElementById('resume-warning');
-  //     warning.innerText = "Please complete the form to submit message";
-  //     warning.style.color = "red";
-  //   }
-  // }
-
   return (
     <BrowserRouter>
       <div className='App-container'>
@@ -95,7 +48,7 @@ function App() {
           <nav className='top-nav'>
             <a href='https://github.com/cordovalegacy?tab=repositories'>Github</a>
             <a href='https://www.linkedin.com/in/brendan-cordova-2874011ba/'>LinkedIn</a>
-            <a href='resume.png' id='download-button' onClick={getResume} download>Resume</a>
+            <Link to="/portfolio/resume" id='download-button'>Resume</Link>
             <a href='https://www.instagram.com/legacybuildspc/?next=%2F'>Instagram</a>
             <a href='http://legacybuildspc.com'>Legacy Builds</a>
           </nav>
@@ -135,6 +88,7 @@ function App() {
               <Route path='/portfolio/experience' element={<Experience />} />
               <Route path='/portfolio/personality' element={<Personality />} />
               <Route path='/portfolio/contact' element={<ContactMe />} />
+              <Route path='/portfolio/resume' element={<Resume />} />
             </Routes>
           </div>
         </div>
@@ -163,8 +117,8 @@ function App() {
             <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/fYIVCtGl787B/ninja">| Ninja |</a></p>
             <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/XXGiIxpBslLo/hammer-and-pick">| Hammer and Pick |</a></p>
             <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/UFXRpPFebwa2/mysql-logo">| MySQL Logo |</a></p>
-            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/qZYHC6vOz8sc/gitlab"></a>| Gitlab |</p>
-            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/69454/heroku"></a>| Heroku |</p>
+            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/qZYHC6vOz8sc/gitlab">| Gitlab |</a></p>
+            <p className='footer-links'><a target="_blank" href="https://icons8.com/icon/69454/heroku">| Heroku |</a></p>
           </div>
         </footer>
       </div>

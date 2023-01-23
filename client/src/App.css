@@ -6,7 +6,7 @@
         padding: 0;
     }
 
-    html{
+    html {
         width: 100%;
         height: fit-content;
         overflow-y: scroll;
@@ -233,7 +233,8 @@
         overflow: hidden;
         height: 10em;
     }
-/* 
+
+    /* 
     .block-2 {
         outline: 1px solid white;
         display: flex;
@@ -271,7 +272,7 @@
         box-shadow: 0px 0px 5px 0px black;
         border-radius: 5px;
     }
-    
+
     #home-button {
         width: 80%;
         background-image: linear-gradient(to right, rgba(194, 3, 19, 0.614), rgba(0, 2, 106, 0.5), rgba(222, 0, 0, 0.5));
@@ -514,26 +515,24 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 10px;
         width: 50em;
-        min-height: 42em;
-        height: fit-content;
         position: relative;
         box-shadow: 0px 0px 10px 0px red;
-        overflow: hidden;
+        overflow-y: scroll;
+        padding: 2%;
+        min-height: 70vh;
     }
 
     .personality-body {
-        z-index: 1;
         background: linear-gradient(to right, silver, whitesmoke, white, whitesmoke, whitesmoke, white, whitesmoke, silver);
         width: 90%;
         border: 2px double black;
         position: absolute;
         height: fit-content;
-        min-height: 15em;
-        top: 25%;
+        top: 40%;
         border-radius: 5px;
         box-shadow: 0px 0px 15px 0px black;
+        padding: 1%;
     }
 
     .personality-row {
@@ -660,9 +659,9 @@
 
     #trifold-1:hover,
     #trifold-2:hover,
-    #trifold-3:hover, 
+    #trifold-3:hover,
     #trifold-text-1:hover,
-    #trifold-text-2:hover, 
+    #trifold-text-2:hover,
     #trifold-text-3:hover {
         z-index: 3;
         transform: scale(1.1);
@@ -696,17 +695,17 @@
         cursor: pointer;
     }
 
-    #trifold-text-1:hover{
+    #trifold-text-1:hover {
         text-decoration: 1px gray underline;
         transition: 1s;
     }
 
-    #trifold-text-2:hover{
+    #trifold-text-2:hover {
         text-decoration: 1px gray underline;
         transition: 1s;
     }
 
-    #trifold-text-3:hover{
+    #trifold-text-3:hover {
         text-decoration: 1px gray underline;
         transition: 2s;
     }
@@ -735,7 +734,7 @@
         width: 100%;
     }
 
-    .experience-open-tabs{
+    .experience-open-tabs {
         background-color: rgb(237, 237, 237);
         width: 100%;
         height: 70vh;
@@ -743,125 +742,126 @@
         box-shadow: 0px 0px 5px gray;
         margin: auto;
         padding: 15px;
-        font-family:'Times New Roman', Times, serif;
+        font-family: 'Times New Roman', Times, serif;
+        overflow-y: scroll;
     }
 
-    .experience-link{
+    .experience-link {
         color: darkred;
     }
 
-    .experience-link-misc{
+    .experience-link-misc {
         color: purple;
         margin-left: -2.5em;
     }
 
-    .experience-tab-header{
+    .experience-tab-header {
         text-decoration: underline;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         text-shadow: 0px 0px 2px gray;
         font-size: 1.2em;
     }
 
-    #tab-header-one{
+    #tab-header-one {
         color: rgb(44, 44, 243);
     }
 
-    #tab-header-two{
+    #tab-header-two {
         color: goldenrod;
     }
 
-    #tab-header-three{
+    #tab-header-three {
         color: rebeccapurple;
     }
 
-    .profession-tab{
+    .profession-tab {
         display: flex;
         justify-content: space-evenly;
         padding: 10px;
     }
 
-    .profession-col-dojo{
+    .profession-col-dojo {
         max-width: 25%;
         font-size: 15px;
         padding: 5px;
     }
 
-    .profession-col-lb{
+    .profession-col-lb {
         max-width: 25%;
         font-size: 15px;
         padding: 5px;
     }
 
-    .profession-col-misc{
+    .profession-col-misc {
         margin: 25px auto;
         max-width: 25%;
         font-size: 15px;
         padding: 5px;
     }
 
-    .col-sub-head{
+    .col-sub-head {
         color: purple;
         text-shadow: 0px 0px 5px darkgoldenrod;
     }
 
-    .col-sub-head-misc{
+    .col-sub-head-misc {
         color: purple;
         text-shadow: 1px 1px 5px black;
         font-weight: bolder;
     }
 
-    .profession-col-dojo ul{
+    .profession-col-dojo ul {
         text-shadow: 0px 0px 2px gray;
         padding: 20px 5px 20px 20px;
         background-color: whitesmoke;
-        list-style:circle;
+        list-style: circle;
         box-shadow: 0px 0px 5px darkred;
     }
 
-    .profession-col-lb ul{
+    .profession-col-lb ul {
         text-shadow: 0px 0px 2px gray;
         padding: 20px 5px 20px 20px;
         background-color: whitesmoke;
-        list-style:circle;
+        list-style: circle;
         box-shadow: 0px 0px 5px darkgoldenrod;
     }
 
-    .profession-col-misc ul{
+    .profession-col-misc ul {
         color: rebeccapurple;
         text-shadow: 0px 0px 2px gray;
         padding: 20px 5px 20px 20px;
-        list-style:circle;
+        list-style: circle;
     }
 
-    .col-experience-description-dojo{
+    .col-experience-description-dojo {
         text-shadow: 0px 0px 2px gray;
         padding: 5px;
         background-color: whitesmoke;
         box-shadow: 0px 0px 5px darkred;
     }
 
-    .col-experience-description-lb{
+    .col-experience-description-lb {
         text-shadow: 0px 0px 2px gray;
         padding: 5px;
         background-color: whitesmoke;
         box-shadow: 0px 0px 5px darkgoldenrod;
     }
 
-    .col-experience-description-misc{
+    .col-experience-description-misc {
         text-shadow: 0px 0px 2px gray;
         padding: 5px;
         background-color: whitesmoke;
         box-shadow: 0px 0px 5px purple;
     }
 
-    .experience-pic-layout{
+    .experience-pic-layout {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
     }
 
-    .experience-project-layout{
+    .experience-project-layout {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -869,21 +869,21 @@
         gap: 5px;
     }
 
-    .proj-pic{
+    .proj-pic {
         width: 60%;
         border: 2px solid gray;
         box-shadow: 0px 0px 5px gray;
         border-radius: 10px;
     }
 
-    .proj-pic:hover{
+    .proj-pic:hover {
         opacity: 0.9;
         transform: scale(1.5);
         transition: 500ms;
         border: 1px solid goldenrod;
     }
 
-    .experience-pic-layout a img{
+    .experience-pic-layout a img {
         width: 4.75em;
         height: 5em;
         margin: 2px;
@@ -892,7 +892,7 @@
         border: 2px solid gray;
     }
 
-    .experience-pic-layout a img:hover{
+    .experience-pic-layout a img:hover {
         opacity: 0.9;
         transform: scale(1.5);
         transition: 500ms;
@@ -900,6 +900,34 @@
     }
 
     /* PERSONALITY SECTION END */
+    /* RESUME SECTION START */
+
+    .resume-container {
+        height: 70vh;
+        overflow-y: scroll;
+        box-shadow: 0px 0px 10px black;
+    }
+
+    #downloading-resume{
+        width: 100%;
+        background-color: cadetblue;
+        border: none;
+        padding: 5px;
+    }
+
+    #downloading-resume a {
+        text-decoration: none;
+        color: black;
+        font-style: italic;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    #downloading-resume:hover{
+        background-color: skyblue;
+        opacity: 0.9;
+    }
+
+    /* RESUME SECTION END */
     /* GLOBAL SECTION START */
 
     @keyframes shake {
