@@ -793,7 +793,7 @@
     .profession-tab {
         display: flex;
         justify-content: space-evenly;
-        padding: 20px;
+        padding: 10px;
     }
 
     .profession-col-dojo {
@@ -822,7 +822,8 @@
     }
 
     .col-sub-head-misc {
-        text-shadow: 1px 1px 5px rebeccapurple;
+        color: darkblue;
+        text-shadow: 1px 1px 5px black;
         font-weight: bolder;
         font-size: 1.8em;
     }
@@ -1007,4 +1008,6 @@
     /* GLOBAL SECTION END */
 }
 
-@media screen and (max-width: 820px) {}
+@media screen and (max-width: 820px) {
+    
+}

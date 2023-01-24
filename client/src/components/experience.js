@@ -183,21 +183,17 @@ const Experience = () => {
             {!isOpenCodingDojo && !isOpenLB && isOpenMiscProj ?
                 (
                     <div className="experience-open-tabs-misc">
-                        <br/>
-                        <br/>
                         <div className="profession-tab">
                             <div className="profession-col-misc">
-                                <br/>
                                 <h6 className="col-sub-head-misc">Favorite Projects:</h6>
                                 <hr />
                                 <div className="experience-project-layout">
                                     <a href="http://www.legacybuildspc.com"><img className="proj-pic" src={LB} alt="legacy builds" /></a>
                                     <a href='#'><img className="proj-pic" src={Specialist} alt="specialist" /></a>
-                                    <a href='https://github.com/cordovalegacy/Met_Art_Api'><img className="proj-pic" src={Art} alt="specialist" /></a>
+                                    <a href='https://github.com/cordovalegacy/Met_Art_Api'><img className="proj-pic" src={Art} alt="art api" /></a>
                                 </div>
                             </div>
                             <div className="profession-col-misc">
-                                <br/>
                                 <h6 className="col-sub-head-misc">Favorite Computers:</h6>
                                 <hr />
                                 <div className="experience-pic-layout">
@@ -214,7 +210,6 @@ const Experience = () => {
                             </div>
                         </div>
                         <a href="/portfolio/experience" className="experience-link-misc">Back To Experience</a>
-                        <br/>
                     </div>
                 )
                 : null}

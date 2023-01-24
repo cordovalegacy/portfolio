@@ -93,7 +93,7 @@ const Personality = () => {
                 <div id="personality-tab">
                     <Image roundedCircle="true" id="wedding-photo-personality" src={WEDDING}></Image>
                     <hr />
-                    <Card.Subtitle>Full Stack Developer | Entrepreneur | Computer Technician</Card.Subtitle>
+                    <Card.Subtitle style={{fontSize: "larger"}}>Full Stack Developer | Entrepreneur | Computer Technician</Card.Subtitle>
                     <Card.Body className="personality-row">
                         <Card.Link href="https://github.com/cordovalegacy?tab=repositories">
                             <Image src={GITHUB}></Image>
@@ -109,7 +109,7 @@ const Personality = () => {
                 <div id="values-tab">
                     <Image roundedCircle="true" id="wedding-photo-personality" src={VALUES}></Image>
                     <hr />
-                    <Card.Subtitle>Values</Card.Subtitle>
+                    <Card.Subtitle style={{fontSize: "larger"}}>Values</Card.Subtitle>
                     <Card.Text>God | Marriage | Family | Friends | Growth | Craft | Freedom | Experiences </Card.Text>
                     <Card.Text className="blue">
                         My values are a cornerstone of who I am.
@@ -121,7 +121,7 @@ const Personality = () => {
                 <div id="interests-tab">
                     <Image roundedCircle="true" id="wedding-photo-personality" src={INTERESTS}></Image>
                     <hr />
-                    <Card.Subtitle>Interests</Card.Subtitle>
+                    <Card.Subtitle style={{fontSize: "larger"}}>Interests</Card.Subtitle>
                     <Card.Text>Front End Development | UX/UI | Computers | Crafting | Traveling | Food | Nature | People </Card.Text>
                     <Card.Text className="blue">My interests are what make me excited to get out of bed in the morning!
                         They nourish my mind, body and soul.
@@ -134,7 +134,7 @@ const Personality = () => {
                 <div id="dreams-tab">
                     <Image roundedCircle="true" id="wedding-photo-personality" src={DREAMS}></Image>
                     <hr />
-                    <Card.Subtitle>Dreams</Card.Subtitle>
+                    <Card.Subtitle style={{fontSize: "larger"}}>Dreams</Card.Subtitle>
                     <Card.Text>Building Dream House | Travel the World | Live off the Land | Successful Start-Up</Card.Text>
                     <Card.Text className="blue">My dreams are what God put on my heart to set out and do in my life.
                         I have an <span style={{ color: 'red' }}>endless</span> reservoir of things I want to achieve and accomplish.
@@ -149,7 +149,7 @@ const Personality = () => {
                 <div id="struggles-tab">
                     <Image roundedCircle="true" id="wedding-photo-personality" src={STRUGGLES}></Image>
                     <hr />
-                    <Card.Subtitle>Struggles</Card.Subtitle>
+                    <Card.Subtitle style={{fontSize: "larger"}}>Struggles</Card.Subtitle>
                     <Card.Text>
                         I debated on whether I should throw this tab in here.
                         But every great person is molded through hardship.
