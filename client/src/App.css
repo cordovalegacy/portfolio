@@ -746,6 +746,22 @@
         overflow-y: scroll;
     }
 
+    .experience-open-tabs-misc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(237, 237, 237);
+        width: 100%;
+        height: 70vh;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px black;
+        padding: 10px;
+        margin: auto;
+        font-family: 'Times New Roman', Times, serif;
+        overflow-y: scroll;
+    }
+
     .experience-link {
         color: darkred;
     }
@@ -777,7 +793,7 @@
     .profession-tab {
         display: flex;
         justify-content: space-evenly;
-        padding: 10px;
+        padding: 20px;
     }
 
     .profession-col-dojo {
@@ -794,9 +810,10 @@
 
     .profession-col-misc {
         margin: 25px auto;
-        max-width: 25%;
-        font-size: 15px;
+        max-width: 40%;
+        font-size: 1.5vw;
         padding: 5px;
+        flex: 1;
     }
 
     .col-sub-head {
@@ -805,9 +822,9 @@
     }
 
     .col-sub-head-misc {
-        color: purple;
-        text-shadow: 1px 1px 5px black;
+        text-shadow: 1px 1px 5px rebeccapurple;
         font-weight: bolder;
+        font-size: 1.8em;
     }
 
     .profession-col-dojo ul {
@@ -884,7 +901,7 @@
     }
 
     .experience-pic-layout a img {
-        width: 4.75em;
+        width: 5em;
         height: 5em;
         margin: 2px;
         border-radius: 10px;

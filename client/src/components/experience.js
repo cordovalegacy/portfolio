@@ -13,6 +13,10 @@ import Crystal from '../img/crystal.png';
 import Batman from '../img/batman.png';
 import LB from '../img/lbproject.png';
 import Specialist from '../img/specialist.png';
+import Buster from '../img/buster.JPG';
+import Icc from '../img/icc.JPG';
+import Washington from  '../img/washington.JPG';
+import Art from '../img/art.png';
 
 const Experience = () => {
 
@@ -178,17 +182,22 @@ const Experience = () => {
                 : null}
             {!isOpenCodingDojo && !isOpenLB && isOpenMiscProj ?
                 (
-                    <div className="experience-open-tabs">
+                    <div className="experience-open-tabs-misc">
+                        <br/>
+                        <br/>
                         <div className="profession-tab">
                             <div className="profession-col-misc">
+                                <br/>
                                 <h6 className="col-sub-head-misc">Favorite Projects:</h6>
                                 <hr />
                                 <div className="experience-project-layout">
                                     <a href="http://www.legacybuildspc.com"><img className="proj-pic" src={LB} alt="legacy builds" /></a>
                                     <a href='#'><img className="proj-pic" src={Specialist} alt="specialist" /></a>
+                                    <a href='https://github.com/cordovalegacy/Met_Art_Api'><img className="proj-pic" src={Art} alt="specialist" /></a>
                                 </div>
                             </div>
                             <div className="profession-col-misc">
+                                <br/>
                                 <h6 className="col-sub-head-misc">Favorite Computers:</h6>
                                 <hr />
                                 <div className="experience-pic-layout">
@@ -198,10 +207,14 @@ const Experience = () => {
                                     <a href='https://www.instagram.com/legacybuildspc/?next=%2F'><img src={Punisher} alt="PC" /></a>
                                     <a href='https://www.instagram.com/legacybuildspc/?next=%2F'><img src={Crystal} alt="PC" /></a>
                                     <a href='https://www.instagram.com/legacybuildspc/?next=%2F'><img src={Batman} alt="PC" /></a>
+                                    <a href='https://www.instagram.com/legacybuildspc/?next=%2F'><img src={Icc} alt="PC" /></a>
+                                    <a href='https://www.instagram.com/legacybuildspc/?next=%2F'><img src={Buster} alt="PC" /></a>
+                                    <a href='https://www.instagram.com/legacybuildspc/?next=%2F'><img src={Washington} alt="PC" /></a>
                                 </div>
                             </div>
                         </div>
                         <a href="/portfolio/experience" className="experience-link-misc">Back To Experience</a>
+                        <br/>
                     </div>
                 )
                 : null}
